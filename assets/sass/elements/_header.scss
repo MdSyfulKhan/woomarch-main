@@ -1,0 +1,70 @@
+.st_site_header{
+  .st_header_top_in{
+    display: flex;
+    justify-content: space-between;
+  }
+  .st_header_top_right ul {
+    li{
+      display: inline-block;
+    }
+    .st_language{
+      position: relative;
+    }
+  }
+  
+  //header middle
+  .st_header_middle_in{
+    display: flex;
+    justify-content: space-between;
+  }
+  .st_header_middle_right ul li{
+    display: inline-block;
+    margin-right: 25px;
+  }
+  .st_phone.st_style1,.st_phone.st_style2{
+    display: flex;
+    align-items: center;
+    color: $primary;
+    img{
+      margin-right: 10px;
+    }
+    .st_number{
+      span{
+        font-size: 12px;
+        color: $secondary;
+      }
+    }
+  }
+  .st_phone.st_style2{
+    font-weight: 700;
+  }
+
+  .st_favorite,.st_addToCart{
+    position: relative;
+    span{
+      position: absolute;
+      top: -45%;
+      left: 65%;
+      background-color: $red;
+      height: 16px;
+      min-width: 16px;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      border-radius: 50%;
+    }
+  }
+  .st_signin_signup{
+    display: inline-flex;
+    .st_login{
+      text-decoration: none;
+      img{
+        margin-right: 5px;
+      }
+    }
+    .st_slash{
+      margin: 0 5px;
+    }
+  }
+}

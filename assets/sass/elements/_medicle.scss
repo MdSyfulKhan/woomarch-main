@@ -1,0 +1,153 @@
+// .st_site_medicle {
+//   .st_medicle_content {
+//     height: 150px;
+//     padding: 10px;
+//     padding-left: 50px;
+//     h2 {
+//       font-size: 38px;
+//       margin: 0;
+//     }
+//     .st_discount_offer {
+//       color: $meta;
+//       margin-left: 100px;
+//       margin-right: 150px;
+//       .st_discount {
+//         font-size: 38px;
+//         span {
+//           font-weight: 700;
+//         }
+//       }
+//       .st_offer_time {
+//         font-size: 26px;
+//         padding: 15px 20px;
+//         background-color: $white;
+//         border-radius: 5px;
+//         margin-top: 15px;
+//       }
+//     }
+//   }
+//   .st_medicle_bottom{
+//     .st_banner_left{
+//       display: block;
+//       height: 100%;
+//       img{
+//         height: 100%;
+//       }
+//     }
+//   }
+// }
+// .st_single_product {
+//   background-color: $white;
+//   border-radius: 5px;
+//   text-decoration: none;
+//   transition: 0.3s;
+//   overflow: hidden;
+//   &:hover .st_product_top::before{
+//     opacity: 0.32;
+//   }
+//   &:hover .st_product_top .st_product_hover{
+//     opacity: 1;
+//     visibility: visible;
+//   }
+//   &:hover .st_product_top img{
+//     transform: scale(1.15);
+//   }
+//   &:hover .st_product_top  .st_product_hover{
+//     bottom: 20%;
+//   }
+//   .st_product_top {
+//     position: relative;
+//     display:block;
+//     overflow: hidden;
+//     &::before{
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       height: 100%;
+//       width: 100%;
+//       background-color: $primary;
+//       opacity: 0;
+//       transition: inherit;
+//       z-index: 1;
+//     }
+//     img{
+//       transition: 0.3s ease;
+//     }
+//     label {
+//       display: inline-block;
+//       margin-top: 10px;
+//       color: $white;
+//       background-color: $meta;
+//       padding: 3px 15px;
+//       border-radius: 0px 3px 3px 0px;
+//       position: relative;
+//       z-index: 3;
+//     }
+//     .st_product_hover{
+//       position: absolute;
+//       bottom: 0;
+//       left: 50%;
+//       transform: translateX(-50%);
+//       opacity: 0;
+//       visibility: hidden;
+//       z-index: 2;
+//       transition: inherit;
+//       li{
+//         color: $white;
+//         height: 38px;
+//         width: 38px;
+//         text-align: center;
+//         line-height: 38px;
+//         background-color: $accent;
+//         border-radius: 50%;
+//         display: inline-block;
+//         transition: inherit;
+//         margin-right: 10px;
+//         position: relative;
+//         &:last-child{
+//           margin: 0;
+//         }
+//         &:hover{
+//           color: $primary;
+//           margin-top: -10px;
+//           transform: translateY(-5px);
+//         }
+//       }
+//     }
+//   }
+
+//   .st_product_bottom {
+//     padding: 20px;
+//     padding-top: 10px;
+//     a {
+//       display: block;
+//       text-decoration: none;
+//       color: $primary;
+//     }
+//     .st_caption{
+//       margin: 5px 0;
+//     }
+//     .st_ratting {
+//       li {
+//         display: inline-block;
+//         color: #ffbd27;
+//         &:last-child {
+//           color: #f2f3f5;
+//         }
+//       }
+//     }
+//     .st_price {
+//       margin: 5px 0;
+//       font-weight: 600;
+//       color: $primary;
+//       span {
+//         font-size: 14px;
+//         font-weight: 400;
+//         color: $secondary;
+//         margin-left: 5px;
+//         text-decoration: line-through;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,31 @@
+.st_single_service.st_style1,
+.st_single_service.st_style2 {
+  padding: 35px 24px;
+  border-radius: 3px;
+  .st_single_service_in {
+    display: flex;
+    align-items: center;
+  }
+  .st_service_icon{
+    height: initial;
+    width: initial;
+    margin-right: 14px;
+  }
+  .st_service_text {
+    div {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0.94px;
+      color: $primary;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+.st_single_service.st_style1{
+  background-color: $gray3;
+}
+.st_single_service.st_style2{
+  background-color: #fff;
+}

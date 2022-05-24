@@ -1,0 +1,73 @@
+/*--------------------------------------------------------------
+3. General Style
+----------------------------------------------------------------*/
+@media only screen and (min-width: 1400px){
+	.container{
+		min-width: 1620px;
+	}
+}
+
+
+body,html{
+  background-color: $gray2;
+}
+
+.st_caption{
+  color: $red;
+  margin-bottom: 5px;
+}
+
+.st_radious10{
+  border-radius: 10px;
+}
+.st_mp0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a.link{
+  text-decoration: none;
+}
+
+hr {
+  margin: 0;
+  width: 100%;
+  background-color: rgba($gray3, 0.15);
+}
+img{
+  height: 100%;
+  width: 100%
+}
+.st_flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.st_vertical_middle {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  .st_vertical_middle_in {
+      width: 100%;
+  }
+}
+
+.st_bg {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.st_sticky_footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.st_fixed_bg {
+  background-attachment: fixed;
+}

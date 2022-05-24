@@ -1,0 +1,123 @@
+.st_site_footer.st_style1 {
+  .st_footer_links {
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    ul li {
+      margin-bottom: 5px;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover a {
+        color: $accent;
+      }
+      a {
+        text-decoration: none;
+        transition: 0.3s;
+      }
+    }
+
+    .st_popular_tag {
+      li {
+        display: inline-block;
+        background-color: $lightgray;
+        margin-bottom: 10px;
+        margin-right: 5px;
+        border-radius: 3px;
+        a {
+          padding: 0px 12px;
+          display: inline-block;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  // footer right
+  .st_footer_right {
+    .st_payment_method {
+      margin-bottom: 30px;
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    .st_condition {
+      margin-bottom: 35px;
+      li {
+        display: inline-block;
+        margin-right: 25px;
+        &:last-child {
+          margin: 0;
+        }
+        &:hover a {
+          color: $accent;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .st_social_links {
+      margin-left: 20px;
+      li {
+        display: inline-block;
+        margin-right: 35px;
+        &:last-child {
+          margin: 0;
+        }
+        a {
+          font-size: 20px;
+          transition: 0.3s;
+        }
+        &:nth-child(1) {
+          &:hover {
+            color: #4267b2;
+          }
+        }
+        &:nth-child(2) {
+          &:hover {
+            color: #00acee;
+          }
+        }
+        &:nth-child(3) {
+          line-height: 0;
+          border-radius: 2px;
+          &:hover {
+            color: #d6249f;
+          }
+        }
+        &:nth-child(4) {
+          &:hover {
+            color: #ff0000;
+          }
+        }
+        &:nth-child(5) {
+          &:hover {
+            color: #25d366;
+          }
+        }
+        &:nth-child(6) {
+          &:hover {
+            color: #005b8e;
+          }
+        }
+      }
+    }
+  }
+
+  //copy right
+  .st_footer_bottom {
+    height: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba($secondary, 0.15);
+  }
+}

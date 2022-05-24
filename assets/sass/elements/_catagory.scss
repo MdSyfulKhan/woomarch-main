@@ -1,0 +1,25 @@
+.st_product_catagory{
+  .st_single_catagory{
+    color: $primary;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    .st_catagory_content{
+      text-align: center;
+      img{
+        margin-bottom: 15px;
+      }
+    }
+  }
+  @media screen and (max-width:767px){
+    .st_catagory_content{
+      img{
+        display: block;
+        margin: auto;
+        width: 100%;
+      }
+    }
+  }
+}

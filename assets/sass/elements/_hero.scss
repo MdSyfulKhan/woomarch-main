@@ -1,0 +1,20 @@
+.st_hero{
+  .st_single_slider{
+    height: 725px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .st_hero_content{
+    h1{
+      font-size: 62px;
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 25px;
+    }
+    p.st_style2{
+      color: $primary;
+    }
+  }
+}
