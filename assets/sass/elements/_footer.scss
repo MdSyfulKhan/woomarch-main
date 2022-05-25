@@ -1,28 +1,34 @@
-.st_site_footer.st_style1 {
-  .st_footer_links {
-    h3 {
+.st_site_footer {
+  img {
+    height: initial;
+    width: initial;
+  }
+  //footer links
+  .st_footer_menu {
+    h4 {
       font-size: 20px;
       font-weight: 500;
       margin-bottom: 15px;
+      font-family: $secondary2;
     }
     ul li {
       margin-bottom: 5px;
       &:last-child {
         margin: 0;
       }
-      &:hover a {
-        color: $accent;
-      }
       a {
         text-decoration: none;
         transition: 0.3s;
       }
+      & a:hover {
+        text-decoration: underline;
+      }
     }
 
-    .st_popular_tag {
+    &.st_popular_tag {
       li {
         display: inline-block;
-        background-color: $lightgray;
+        background-color: $gray3;
         margin-bottom: 10px;
         margin-right: 5px;
         border-radius: 3px;
@@ -36,88 +42,130 @@
       }
     }
   }
-  // footer right
-  .st_footer_right {
-    .st_payment_method {
-      margin-bottom: 30px;
-      li {
-        display: inline-block;
-        margin-right: 25px;
-        &:last-child {
-          margin: 0;
-        }
+  .st_condition {
+    li {
+      display: inline-block;
+      margin-right: 25px;
+      &:last-child {
+        margin: 0;
+      }
+      &:hover a {
+        text-decoration: underline;
+      }
+      a {
+        text-decoration: none;
       }
     }
-    .st_condition {
-      margin-bottom: 35px;
-      li {
-        display: inline-block;
-        margin-right: 25px;
-        &:last-child {
-          margin: 0;
-        }
-        &:hover a {
-          color: $accent;
-        }
-        a {
-          text-decoration: none;
+  }
+  //social links
+  .st_social_links {
+    li {
+      display: inline-block;
+      text-align: center;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+      border-radius: 3px;
+      background-color: $gray3;
+      margin-right: 20px;
+      &:last-child {
+        margin: 0;
+      }
+      a {
+        font-size: 20px;
+        transition: 0.3s;
+        display: block;
+      }
+      &:nth-child(1) {
+        &:hover {
+          color: #4267b2;
         }
       }
-    }
-    .st_social_links {
-      margin-left: 20px;
-      li {
-        display: inline-block;
-        margin-right: 35px;
-        &:last-child {
-          margin: 0;
+      &:nth-child(2) {
+        &:hover {
+          color: #00acee;
         }
-        a {
-          font-size: 20px;
-          transition: 0.3s;
+      }
+      &:nth-child(3) {
+        &:hover {
+          color: #d6249f;
         }
-        &:nth-child(1) {
-          &:hover {
-            color: #4267b2;
-          }
+      }
+      &:nth-child(4) {
+        &:hover {
+          color: #ff0000;
         }
-        &:nth-child(2) {
-          &:hover {
-            color: #00acee;
-          }
+      }
+      &:nth-child(5) {
+        &:hover {
+          color: #25d366;
         }
-        &:nth-child(3) {
-          line-height: 0;
-          border-radius: 2px;
-          &:hover {
-            color: #d6249f;
-          }
-        }
-        &:nth-child(4) {
-          &:hover {
-            color: #ff0000;
-          }
-        }
-        &:nth-child(5) {
-          &:hover {
-            color: #25d366;
-          }
-        }
-        &:nth-child(6) {
-          &:hover {
-            color: #005b8e;
-          }
+      }
+      &:nth-child(6) {
+        &:hover {
+          color: #005b8e;
         }
       }
     }
   }
-
+  @media only screen and (max-width: 1400px) {
+    .st_social_links li {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+  }
   //copy right
   .st_footer_bottom {
-    height: 77px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid rgba($secondary, 0.15);
+    padding: 25px;
+    text-align: center;
   }
+  //footer contact
+  .st_footer_contact.st_style1,
+  .st_footer_contact.st_style2{
+    li {
+      margin-bottom: 18px;
+      &:last-child {
+        margin: 0;
+      }
+      .st_contact_elements {
+        display: inline-flex;
+        img {
+          height: max-content;
+          margin-right: 15px;
+        }
+        p {
+          margin: 0;
+          font-size: 16px;
+          font-weight: 600;
+          span {
+            color: $primary;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .st_footer_contact.st_style2{
+    font-family: $secondary2;
+  }
+  .st_subscribe.st_style2 {
+    input {
+      background-color: $gray2;
+      margin-right: 15px;
+      color: $secondary;
+    }
+  }
+  .st_footer_right {
+    margin-left: -50px;
+  }
+  @media only screen and (max-width: 1200px) {
+    .st_footer_right {
+      margin: 0;
+    }
+  }
+}
+
+.st_site_footer.st_style2 {
+  background-color: #fff;
 }

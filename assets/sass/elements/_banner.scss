@@ -1,10 +1,41 @@
-.st_banner_product_in{
+
+
+
+
+//container layout design
+.st_product_container_in {
   display: flex;
-  .st_banner_product_left.st_style1{
-    
+  .st_product_container_left {
+    min-width: 20% !important;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .st_product_container_right {
   }
 }
-
+@media only screen and (max-width: 1200px) {
+  .st_product_container_in {
+    display: block;
+    .st_product_container_left {
+      width: 100% !important;
+    }
+    .st_tranding_banner,.st_new_arrival_banner{
+       padding: 20px !important;
+    }
+  }
+}
+// genaral inside
+.st_arrow_link{
+  text-decoration: none;
+  color: $primary;
+  font-size: 14px;
+  i{
+    font-size: 12px;
+    margin-left: 3px;
+  }
+}
 
 
 .st_section_heading {
@@ -19,12 +50,7 @@
     font-weight: 600;
   }
   a {
-    font-size: 14px;
     font-weight: 500;
-    text-decoration: none;
-    i {
-      margin-left: 2px;
-    }
   }
 }
 
@@ -54,27 +80,16 @@
   }
 }
 // home page 2 best_selling product
-.st_best_selling_content {
-  display: flex;
-  align-items: center;
-  background-color: $gray3;
+.st_best_selling_product .st_product_container {
+  background-color: #f3f5f8;
   padding: 30px 50px;
+  padding-bottom: 0;
 }
 
 // home page 2 tranding product
-.st_tranding_content {
-  display: flex;
-  .st_tranding_element {
-    width: 20%;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    text-align: center;
-    border-radius: 5px;
-  }
-  .st_tranding_product {
-    width: 80%;
-  }
-  .st_cuppon_text {
+.st_tranding_banner {
+  text-align: center;
+  .st_discount_text {
     height: 125px;
     width: 125px;
     display: flex;
@@ -84,7 +99,7 @@
     color: #fff;
     border-radius: 50%;
     margin: auto;
-    margin-top: 35px;
+    margin-bottom: 8px;
     p {
       margin: 0;
       font-weight: 700;
@@ -92,11 +107,56 @@
         font-size: 30px;
       }
     }
-    h2 {
-      font-size: 32px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .st_coupone_code{
+    padding: 8px 42px;
+    outline: 1px dashed #fff;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 700;
+    color: $primary;
+  }
+  a{
+    color: $primary;
+  }
+}
+.st_new_arrival_banner{
+  background-color: $gray3;
+  padding: 20px;
+  text-align: center;
+  h3{
+    font-size: 32px;
+    line-height: 120%;
+    span{
+      font-size: 52px;
+      color: $red;
     }
-    p{
-      
+  }
+  h4{
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .st_countdown{
+    border-radius: 5px;
+    padding: 10px 30px;
+    background-color: 
+    #fff;
+    color: $red;
+    display: inline-block;
+    text-align: center;
+    .st_time{
+      font-size: 32px;
+      font-weight: 600;
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  .st_new_arrival_banner{
+    background-image: none !important;
+  }
+}
+
+

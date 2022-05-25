@@ -7,7 +7,6 @@
 	}
 }
 
-
 body,html{
   background-color: $gray2;
 }
@@ -33,7 +32,7 @@ a.link{
 hr {
   margin: 0;
   width: 100%;
-  background-color: rgba($gray3, 0.15);
+  background-color: rgba($secondary, 0.15);
 }
 img{
   height: 100%;
@@ -70,4 +69,15 @@ img{
 
 .st_fixed_bg {
   background-attachment: fixed;
+}
+//subscribe 
+.st_subscribe{
+  display: inline-flex;
+  input{
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
 }
