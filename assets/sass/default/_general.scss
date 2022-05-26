@@ -19,12 +19,17 @@ body,html{
 .st_radious10{
   border-radius: 10px;
 }
+
 .st_mp0 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.st_icon{
+  height: max-content !important;
+  width: max-content !important;
+}
 a.link{
   text-decoration: none;
 }

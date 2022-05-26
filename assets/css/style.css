@@ -428,6 +428,15 @@ body, html {
   padding: 0;
 }
 
+.st_icon {
+  height: -webkit-max-content !important;
+  height: -moz-max-content !important;
+  height: max-content !important;
+  width: -webkit-max-content !important;
+  width: -moz-max-content !important;
+  width: max-content !important;
+}
+
 a.link {
   text-decoration: none;
 }
@@ -655,10 +664,8 @@ img {
           align-items: center;
 }
 
-.st_single_service.st_style1 .st_service_icon,
-.st_single_service.st_style2 .st_service_icon {
-  height: initial;
-  width: initial;
+.st_single_service.st_style1 img,
+.st_single_service.st_style2 img {
   margin-right: 14px;
 }
 
@@ -828,9 +835,6 @@ img {
 
 .st_site_footer .st_footer_contact.st_style1 li .st_contact_elements img,
 .st_site_footer .st_footer_contact.st_style2 li .st_contact_elements img {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
   margin-right: 15px;
 }
 
@@ -988,8 +992,8 @@ label.st_style2.st_color3 {
 
 .st_single_product .st_product_top_in.st_style1 ul li:hover,
 .st_single_product .st_product_top_in.st_style2 ul li:hover {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .st_single_product .st_product_top_in.st_style1 ul li a,
@@ -1055,6 +1059,17 @@ label.st_style2.st_color3 {
 
 .st_single_product .st_product_bottom.st_style2 a {
   font-size: 20px;
+}
+
+.st_single_product .st_product_bottom.st_style2 a:hover {
+  color: #4285F4;
+}
+
+.st_single_product:hover {
+  -webkit-box-shadow: 0 8px 8px rgba(1, 10, 68, 0.05);
+          box-shadow: 0 8px 8px rgba(1, 10, 68, 0.05);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .st_single_product:hover .st_product_top.st_style1::before,

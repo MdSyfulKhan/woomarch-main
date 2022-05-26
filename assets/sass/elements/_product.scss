@@ -86,7 +86,7 @@ label.st_style2.st_color3 {
           margin: 0;
         }
         &:hover {
-          transform: translateY(-1px);
+          transform: translateY(-3px);
         }
         a {
           display: block;
@@ -102,6 +102,7 @@ label.st_style2.st_color3 {
         background-color: $blue;
       }
     }
+
   }
 
   // product bottom
@@ -116,8 +117,7 @@ label.st_style2.st_color3 {
       color: $primary;
       margin-bottom: 7px;
     }
-    .st_product_caption {
-    }
+
     .st_ratting li {
       display: inline-block;
       a {
@@ -144,12 +144,19 @@ label.st_style2.st_color3 {
   .st_product_bottom.st_style2{
     a{
       font-size: 20px;
+      &:hover{
+        color: $blue;
+      }
     }
   }
 }
 
 // product hover
 .st_single_product {
+  &:hover{
+    box-shadow: 0 8px 8px rgba($primary,0.05);
+    transform: translateY(-5px);
+  }
   &:hover .st_product_top.st_style1::before,
   &:hover .st_product_top.st_style2::before,
   &:hover .st_product_top_in.st_style1 ul,
