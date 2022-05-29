@@ -42,14 +42,7 @@
     }
   }
   .st_grid_container_in {
-    width: 100%;
-    .st_gird_container_left {
-      width: 25%;
-    }
-    .st_gird_container_right {
-      width: 75%;
-      margin-left: 25px;
-    }
+    display: block;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -63,14 +56,7 @@
     }
   }
   .st_grid_container_in {
-    width: 100%;
-    .st_gird_container_left {
-      width: 25%;
-    }
-    .st_gird_container_right {
-      width: 75%;
-      margin-left: 25px;
-    }
+    display: block;
   }
 }
 @media only screen and (min-width: 1400px) {

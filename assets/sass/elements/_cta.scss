@@ -1,0 +1,58 @@
+.st_cta_section.st_style2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 590px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      130.76deg,
+      $gray3 52.92%,
+      rgba(0, 0, 0, 0) 52.96%
+    );
+  }
+  .st_cta_content.st_style2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    .st_cta_text{
+      color: $primary;
+      h2{
+        font-size: 52px;
+      }
+      .st_countdown{
+        font-size: 32px;
+        line-height: 1;
+        .st_time{
+          font-size: 52px;
+          font-weight: 600;
+        }
+      }
+    }
+    .st_offer_text {
+      margin-right: 650px;
+      height: 190px;
+      width: 190px;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      font-size: 42px;
+      color: $red;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      .st_discount_text.st_style2 {
+        font-size: 72px;
+      }
+    }
+  }
+}

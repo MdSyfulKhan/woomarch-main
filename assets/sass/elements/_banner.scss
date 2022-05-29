@@ -2,6 +2,8 @@
 .st_arrow_link {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 500;
+  color: $primary;
   i {
     font-size: 12px;
     margin-left: 3px;
@@ -18,9 +20,6 @@
   div {
     font-size: 26px;
     font-weight: 600;
-  }
-  a {
-    font-weight: 500;
   }
 }
 

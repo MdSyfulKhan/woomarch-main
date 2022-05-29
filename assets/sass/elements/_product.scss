@@ -1,3 +1,37 @@
+.st_product_menu.st_style1,
+.st_product_menu.st_style2{
+  ul{
+    border-bottom: 1px solid rgba($primary,0.1);
+    margin-bottom: 25px;
+    li{
+      display: inline-block;
+      margin-right: 50px;
+      font-weight: 600;
+      padding-bottom: 15px;
+      margin-bottom: -25px;
+      border-bottom: 1px solid transparent;
+      &:last-child{
+        margin: 0;
+      }
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+.st_product_menu.st_style2{
+  ul{
+    text-align: center;
+    li{
+      &.active,&:hover{
+        color: $primary;
+        border-bottom: 1px solid $blue;
+      }
+    }
+  }
+}
+
+
 label.st_style1,
 label.st_style2,
 label.st_style3 {

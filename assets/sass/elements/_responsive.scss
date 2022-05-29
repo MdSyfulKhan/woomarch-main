@@ -1,0 +1,38 @@
+// min-width
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 992px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1400px) {
+
+}
+
+// max-width
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 992px) {
+  .st_cta_section.st_style2 {
+    &::before{
+      background: none;
+    }
+    background-position: -500px center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1400px) {
+  .st_cta_section.st_style2 {
+    background-position: -500px center;
+    .st_cta_content.st_style2 {
+      .st_offer_text {
+        margin-right: 0;
+      }
+    }
+  }
+}
