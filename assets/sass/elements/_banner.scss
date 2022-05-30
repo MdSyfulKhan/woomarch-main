@@ -23,6 +23,23 @@
   }
 }
 
+// home 1
+.st_features_product.st_home1{
+  .container{
+    padding: 50px;
+    background-color: $gray3;
+    padding-bottom: 25px;
+  }
+  .st_features_product_banner{
+    h2{
+      font-size: 48px;
+    }
+    
+  }
+}
+
+
+
 
 // home page 2 three_banner
 .st_single_banner_three {
@@ -49,11 +66,13 @@
   }
 }
 
-// 
-.st_best_selling_product .st_best_selling_text{
-  div{
+//home page 2best_selling_product
+.st_best_selling_product .container .max_container{
+  background-color: $gray3;
+  padding: 30px 50px;
+}
 
-  }
+.st_best_selling_product .st_best_selling_text{
   h2{
     font-size: 38px;
     font-weight: 600;
@@ -61,11 +80,7 @@
 
 }
 
-//home page 2best_selling_product
-.st_best_selling_product .container{
-  background-color: $gray3;
-  padding: 30px 50px;
-}
+
 
 
 // home page 2 tranding_banner

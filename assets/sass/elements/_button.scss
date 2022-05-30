@@ -1,5 +1,4 @@
-.st_addtocart_btn.st_style1,
-.st_addtocart_btn.st_style2 {
+.st_addtocart_btn{
   text-align: center;
   display: block;
   font-size: 14px;
@@ -13,8 +12,11 @@
   background-color: $gray3;
   font-weight: 600 !important;
 }
+.st_addtocart_btn.st_style1{
+  font-family: $font1;
+}
 .st_addtocart_btn.st_style2{
-  font-weight: 400 !important;
+  font-family: $font2;
 }
 
 .st_btn.st_style1,

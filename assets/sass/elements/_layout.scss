@@ -1,4 +1,4 @@
-.st_container_layout_5 {
+.st_grid_container_layout_5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 25px;
@@ -8,20 +8,20 @@
   }
 }
 
-//product container
+//product container max_container
 .st_grid_container_in {
   display: block;
   width: 100%;
 }
 
-// container resizing
+// container max_container resizing
 @media only screen and (max-width: 767px) {
-  .st_container_layout_5 {
+  .st_grid_container_layout_5 {
     grid-template-columns: 1fr;
   }
 }
 @media only screen and (min-width: 768px) {
-  .st_container_layout_5 {
+  .st_grid_container_layout_5 {
     grid-template-columns: repeat(2, 1fr);
     .st_col1_row2_span {
       grid-area: 1/1/2/-1;
@@ -32,7 +32,7 @@
   }
 }
 @media only screen and (min-width: 992px) {
-  .st_container_layout_5 {
+  .st_grid_container_layout_5 {
     grid-template-columns: repeat(3, 1fr);
     .st_col1_row2_span {
       grid-area: 1/1/2/-1;
@@ -46,7 +46,7 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-  .st_container_layout_5 {
+  .st_grid_container_layout_5 {
     grid-template-columns: repeat(4, 1fr);
     .st_col1_row2_span {
       grid-area: 1/1/3/1;
@@ -60,7 +60,7 @@
   }
 }
 @media only screen and (min-width: 1400px) {
-  .st_container_layout_5 {
+  .st_grid_container_layout_5 {
     grid-template-columns: repeat(5, 1fr);
     .st_col1_row2_span {
       grid-area: 1/1/3/1;

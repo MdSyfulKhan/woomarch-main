@@ -5,6 +5,7 @@
     align-items: center;
   }
   .st_header_top.st_style1 {
+    font-family: $font1;
     height: 40px;
     border-bottom: 1px solid rgba($yellow, 0.3);
   }
@@ -13,26 +14,21 @@
     border-bottom: 1px solid rgba($blue, 0.4);
   }
 
+
+
+
+
+
+
   //header top in
   .st_header_top.st_style2 {
-    color: $primary;
+    
   }
   .st_header_top_in {
     display: flex;
     justify-content: space-between;
   }
-  .st_location {
-    text-decoration: none;
-    img {
-      margin-right: 5px;
-    }
-  }
-  .st_header_top_left span.st_style1,
-  .st_header_top_left span.st_style2 {
-    padding: 3px 15px;
-    margin-right: 10px;
-    border-radius: 3px;
-  }
+  
   .st_header_top_left span.st_style1 {
     background-color: $yellow;
     color: $primary;
@@ -80,8 +76,7 @@
     display: flex;
     align-items: center;
   }
-  .st_header_bottom_in.st_style1,
-  .st_header_bottom_in.st_style2 {
+  .st_header_bottom_in {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,44 +88,30 @@
       margin: 0;
     }
   }
-  nav ul li {
-    display: inline-block;
-    margin-right: 35px;
-    a {
-      color: $primary;
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+  // single elements
+  .st_signin_signup {
+    display: inline-flex;
+    .st_login {
       text-decoration: none;
-      i {
-        margin-left: 8px;
-        font-size: 14px;
+      img {
+        margin-right: 5px;
       }
     }
-  }
-  nav.st_style2 {
-    li:hover a,
-    li.active a{
-      color: $blue;
+    .st_slash {
+      margin: 0 5px;
     }
-  }
-  .st_cta.st_style2 {
-    display: flex;
-  }
-  .st_phone.st_style1,
-  .st_phone.st_style2 {
-    display: flex;
-    align-items: center;
-    color: $primary;
-    img {
-      margin-right: 10px;
-    }
-    .st_number {
-      span {
-        font-size: 12px;
-        color: $secondary;
-      }
-    }
-  }
-  .st_phone.st_style2 {
-    font-weight: 700;
   }
 
   .st_favorite,
@@ -150,16 +131,56 @@
       border-radius: 50%;
     }
   }
-  .st_signin_signup {
-    display: inline-flex;
-    .st_login {
-      text-decoration: none;
-      img {
-        margin-right: 5px;
+
+  .st_phone.st_style1,
+  .st_phone.st_style2 {
+    display: flex;
+    align-items: center;
+    color: $primary;
+    img {
+      margin-right: 10px;
+    }
+    .st_number {
+      span {
+        font-size: 12px;
+        color: $secondary;
       }
     }
-    .st_slash {
-      margin: 0 5px;
+  }
+
+  .st_phone.st_style2 {
+    font-weight: 700;
+  }
+
+  .st_cta.st_style2 {
+    display: flex;
+  }
+
+  .st_location {
+    text-decoration: none;
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  // menu 
+  nav ul li {
+    display: inline-block;
+    margin-right: 35px;
+    a {
+      color: $primary;
+      text-decoration: none;
+      i {
+        margin-left: 8px;
+        font-size: 14px;
+      }
+    }
+  }
+  //menu hover
+  nav.st_style2 {
+    li:hover a,
+    li.active a{
+      color: $blue;
     }
   }
 }

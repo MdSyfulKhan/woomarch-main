@@ -2,8 +2,10 @@
 3. General Style
 ----------------------------------------------------------------*/
 @media only screen and (min-width: 1400px){
-	.container{
-		min-width: 1620px;
+	.max_container{
+		width: 100%;
+    max-width: 1620px;
+    margin: auto;
 	}
 }
 
