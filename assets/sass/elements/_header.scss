@@ -1,4 +1,25 @@
 .st_site_header {
+
+  label.st_style1{
+    padding: 3px 15px;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-right: 15px;
+  }
+  label.st_style1.st_color1{
+    background-color: $yellow;
+    color: $primary;
+  }
+  label.st_style1.st_color2{
+    background-color: $blue;
+    color: #fff;
+  }
+  label.st_style1.st_color3{
+    background-color: $blue;
+    color: #fff;
+  }
+
+
   //header top
   .st_header_top {
     display: flex;
@@ -13,10 +34,6 @@
     height: 50px;
     border-bottom: 1px solid rgba($blue, 0.4);
   }
-
-
-
-
 
 
 
@@ -89,17 +106,6 @@
     }
   }
   
-  
-  
-  
-
-  
-  
-
-
-
-
-
   // single elements
   .st_signin_signup {
     display: inline-flex;
@@ -181,6 +187,11 @@
     li:hover a,
     li.active a{
       color: $blue;
+    }
+  }
+  nav.st_style3 {
+    li.active a{
+      font-weight: 600;
     }
   }
 }

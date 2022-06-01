@@ -9,7 +9,8 @@
     transition: 0.3s;
   }
   .st_product_top_in.st_style1,
-  .st_product_top_in.st_style2 {
+  .st_product_top_in.st_style2,
+  .st_product_top_in.st_style3 {
     position: relative;
     transition: inherit;
     overflow: hidden;
@@ -65,10 +66,34 @@
       transition: inherit;
     }
   }
+  // home page 3
+  .st_product_top_in.st_style3{
+    ul{
+      top: calc(50% - 20px);
+      left: 110%;
+      li{
+        display: inline-block;
+        border-radius: 0;
+        background-color: #fff;
+        margin-bottom: 10px;
+        border: 1px solid $gray3;
+        a{
+          color: $primary;
+        }
+        &:hover {
+          background-color: $gray4;
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 
   //product bottom content
   .st_product_bottom.st_style1,
-  .st_product_bottom.st_style2 {
+  .st_product_bottom.st_style2,
+  .st_product_bottom.st_style3 {
     transition: inherit;
     padding: 20px;
     .st_product_name {
@@ -107,6 +132,22 @@
       }
     }
   }
+  .st_product_bottom.st_style3{
+    text-align: center;
+    color: #303030;
+    padding: 20px 10px;
+    .st_product_name{
+      font-size: 18px;
+    }
+    .st_price{
+      margin: 0;
+      font-size: 18px;
+      span{
+        font-size: 16px;
+      }
+    }
+  }
+
   .st_product_bottom.st_style1 {
     .st_product_name:hover {
       color: $yellow;
@@ -120,11 +161,11 @@
       }
     }
   }
+ 
 
   // label tag
   label.st_style1,
-  label.st_style2,
-  label.st_style3 {
+  label.st_style2 {
     color: #fff;
     padding: 3px 15px;
     line-height: 1;
@@ -155,7 +196,8 @@
   }
   &:hover .st_product_top.st_style2::before,
   &:hover .st_product_top_in.st_style1 ul,
-  &:hover .st_product_top_in.st_style2 ul {
+  &:hover .st_product_top_in.st_style2 ul,
+  &:hover .st_product_top_in.st_style3 ul {
     opacity: 1;
     visibility: visible;
   }
@@ -167,6 +209,10 @@
   &:hover .st_product_top_in.st_style2 ul {
     top: 50%;
   }
+  // hover style3
+  &:hover .st_product_top_in.st_style3 ul{
+    left: calc(85%);
+  }  
   &:hover .st_addtocart_btn.st_style1 {
     background-color: $yellow;
   }

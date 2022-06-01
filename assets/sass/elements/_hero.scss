@@ -17,4 +17,17 @@
       color: $primary;
     }
   }
+
+
+  .st_hero_content.st_style3{
+    .st_caption{
+      display: inline-block;
+      padding: 0 15px;
+      background-color: $gray3;
+      color: rgba($primary, 0.7);
+    }
+    h1{
+      font-size: 52px;
+    }
+  }
 }

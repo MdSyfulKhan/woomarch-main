@@ -1,4 +1,4 @@
-.st_addtocart_btn{
+.st_addtocart_btn {
   text-align: center;
   display: block;
   font-size: 14px;
@@ -12,15 +12,16 @@
   background-color: $gray3;
   font-weight: 600 !important;
 }
-.st_addtocart_btn.st_style1{
+.st_addtocart_btn.st_style1 {
   font-family: $font1;
 }
-.st_addtocart_btn.st_style2{
+.st_addtocart_btn.st_style2 {
   font-family: $font2;
 }
 
 .st_btn.st_style1,
-.st_btn.st_style2 {
+.st_btn.st_style2,
+.st_btn.st_style3 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -47,9 +48,43 @@
   color: #fff;
   background-color: $blue;
 }
+.st_btn.st_style3.st_color3 {
+  padding: 16px 34px;
+  border-radius: 0;
+  background-color: $primary;
+  color: #fff;
+}
 
 .st_btn.st_style1:hover,
 .st_btn.st_style2:hover {
   transform: translateY(-1px);
   box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.1);
+}
+
+// subscribe btn
+button.st_btn.st_style1,
+button.st_btn.st_style2,
+button.st_btn.st_style3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  border-radius: 3px;
+  &:hover{
+    transform: translateY(-1px);
+  }
+}
+
+button.st_btn.st_style1 {
+  padding: 15px 34px;
+  background-color: $yellow;
+}
+button.st_btn.st_style2 {
+  padding: 15px 20px;
+  background-color: $blue;
+  color: #fff;
+}
+button.st_btn.st_style3 {
+  padding: 14px 20px;
+  background-color: $primary;
+  color: #fff;
 }

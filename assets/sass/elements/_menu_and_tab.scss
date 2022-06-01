@@ -1,4 +1,3 @@
-
 // product menu
 .st_product_menu.st_style1,
 .st_product_menu.st_style2 {
@@ -11,6 +10,7 @@
       font-weight: 600;
       padding-bottom: 15px;
       border-bottom: 1px solid transparent;
+      transform: translateY(1px);
       &:last-child {
         margin: 0;
       }
@@ -28,6 +28,28 @@
       &:hover {
         color: $primary;
         border-bottom: 1px solid $blue;
+      }
+    }
+  }
+}
+// home page 3 tab menu
+.st_product_menu.st_style3{
+  text-align: center;
+  h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  ul{
+    margin-bottom: 50px;
+    li{
+      display: inline-block;
+      margin-right: 30px;
+      a{
+        text-decoration: none;
+      }
+      &.active{
+        font-weight: 700;
+        color: $primary;
       }
     }
   }
