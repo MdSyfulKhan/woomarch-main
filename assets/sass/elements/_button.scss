@@ -1,3 +1,4 @@
+//product button 
 .st_addtocart_btn {
   text-align: center;
   display: block;
@@ -18,7 +19,7 @@
 .st_addtocart_btn.st_style2 {
   font-family: $font2;
 }
-
+// 
 .st_btn.st_style1,
 .st_btn.st_style2,
 .st_btn.st_style3 {
@@ -73,7 +74,6 @@ button.st_btn.st_style3 {
     transform: translateY(-1px);
   }
 }
-
 button.st_btn.st_style1 {
   padding: 15px 34px;
   background-color: $yellow;

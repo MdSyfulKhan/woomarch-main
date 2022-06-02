@@ -54,3 +54,36 @@
     }
   }
 }
+
+// product tab list home page 3
+.st_product_tab_list.st_style1{
+  li{
+    margin-bottom: 10px;
+    background-color: $gray3;
+    height: 68px;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    &.active{
+      background-color: #DFDEDA;
+    }
+    a{
+      text-decoration: none;
+      width: 100%;
+      display: block;
+    }
+    p{
+      margin: 0;
+      color: $primary;
+    }
+    img{
+      height: initial;
+      width: initial;
+    }
+    .st_img_box{
+      min-width: 75px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
