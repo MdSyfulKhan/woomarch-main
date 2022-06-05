@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../elements/.st_tab_product.scss"
+        "../home/home_3.scss"
     ],
     "names": [],
-    "file": ".st_tab_product.css"
+    "file": "home_3.css"
 }
