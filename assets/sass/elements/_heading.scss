@@ -1,6 +1,29 @@
+// home page 1
+.st_features_product_heading {
+  font-size: 48px;
+  line-height: 110%;
+}
+.st_features_product_heading.st_furniture {
+  font-size: 38px;
+  line-height: 120%;
+}
+
+// home page 2
+.st_section_heading.st_home2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($primary,0.1);
+  margin-bottom: 25px;
+  h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+  }
+}
+
 // home page 3
-.st_section_heading_text.st_style2 {
-  text-align: center;
+.st_section_heading.st_home3 {
   h2 {
     font-size: 32px;
     line-height: 150%;
@@ -10,21 +33,5 @@
     font-size: 18px;
     line-height: 150%;
     color: $primary;
-  }
-}
-
-.st_product_section_heading_text.st_style2 {
-}
-.st_product_heading {
-  text-align: center;
-  h2 {
-    font-size: 32px;
-    line-height: 150%;
-    margin-bottom: 5px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 150%;
-    margin-bottom: 0;
   }
 }

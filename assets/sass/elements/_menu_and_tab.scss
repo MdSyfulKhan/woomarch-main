@@ -1,53 +1,66 @@
 // product menu
-.st_product_menu.st_style1,
-.st_product_menu.st_style2 {
-  ul {
-    border-bottom: 1px solid rgba($primary, 0.1);
-    margin-bottom: 25px;
-    li {
-      display: inline-block;
-      margin-right: 50px;
-      font-weight: 600;
-      padding-bottom: 15px;
-      border-bottom: 1px solid transparent;
-      transform: translateY(1px);
-      &:last-child {
-        margin: 0;
-      }
-      a {
-        text-decoration: none;
-      }
+.st_product_tab_heading{
+  border-bottom: 1px solid rgba($primary, 0.1);
+  margin-bottom: 25px;
+}
+
+.st_product_filter_tab.st_style1,
+.st_product_filter_tab.st_style2{
+  li {
+    font-size: 26px;
+    font-weight: 600;
+    display: inline-block;
+    padding-bottom: 15px;
+    transform: translateY(2px);
+    &:last-child {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
-.st_product_menu.st_style2 {
-  ul {
-    text-align: center;
-    li {
-      &.active,
-      &:hover {
-        color: $primary;
-        border-bottom: 1px solid $blue;
-      }
+// home page 1
+.st_product_filter_tab.st_style1 {
+  li {
+    color: $primary;
+    border-bottom: 3px solid transparent;
+    margin-right: 70px;
+    &.active,
+    &:hover {
+      border-bottom: 3px solid $yellow;
     }
   }
 }
+// home page 2
+.st_product_filter_tab.st_style2 {
+  li {
+    border-bottom: 1px solid transparent;
+    margin-right: 50px;
+    transform: translateY(1px);
+    &.active,
+    &:hover {
+      color: $primary;
+      border-bottom: 1px solid $blue;
+    }
+  }
+}
+
 // home page 3 tab menu
-.st_product_menu.st_style3{
-  text-align: center;
-  h2{
+.st_product_menu.st_style3 {
+  h2 {
     font-size: 32px;
     margin-bottom: 20px;
   }
-  ul{
+  ul {
     margin-bottom: 50px;
-    li{
+    li {
       display: inline-block;
       margin-right: 30px;
-      a{
+      a {
         text-decoration: none;
       }
-      &.active{
+      &.active {
         font-weight: 700;
         color: $primary;
       }
@@ -56,31 +69,31 @@
 }
 
 // product tab list home page 3
-.st_product_tab_list.st_style1{
-  li{
+.st_product_tab_list.st_style1 {
+  li {
     margin-bottom: 10px;
     background-color: $light-gray2;
     height: 68px;
     display: inline-flex;
     align-items: center;
     width: 100%;
-    &.active{
-      background-color: #DFDEDA;
+    &.active {
+      background-color: #dfdeda;
     }
-    a{
+    a {
       text-decoration: none;
       width: 100%;
       display: block;
     }
-    p{
+    p {
       margin: 0;
       color: $primary;
     }
-    img{
+    img {
       height: initial;
       width: initial;
     }
-    .st_img_box{
+    .st_img_box {
       min-width: 75px;
       display: flex;
       justify-content: center;
