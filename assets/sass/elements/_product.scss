@@ -76,12 +76,12 @@
         border-radius: 0;
         background-color: #fff;
         margin-bottom: 10px;
-        border: 1px solid $gray3;
+        border: 1px solid $light-gray2;
         a{
           color: $primary;
         }
         &:hover {
-          background-color: $gray4;
+          background-color: $gray1;
           a{
             color: #fff;
           }
@@ -115,7 +115,7 @@
       &:last-child {
         margin: 0;
         a {
-          color: $gray3;
+          color: $light-gray2;
         }
       }
     }

@@ -1,0 +1,39 @@
+/*
+|--------------------------------------------------------------------------
+| Theme Fonts
+|-------------------------------------------------------------------------- */
+@import "./default/variable";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*
+|--------------------------------------------------------------------------
+| Theme Color Variable
+|-------------------------------------------------------------------------- */
+$themePrimary: #010A44;
+$themeSecondary:  #707188;
+$themeAccent: #4285F4;
+
+/*
+|--------------------------------------------------------------------------
+| Theme Spacial Style
+|-------------------------------------------------------------------------- */
+
+body,
+.st_secondary_font {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.st_primary_font,
+h1,
+h2,
+h3,
+h4,
+h3,
+h6 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body,
+.cs-secondary_color {
+  color: $themeSecondary;
+}

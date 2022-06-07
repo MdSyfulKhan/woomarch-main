@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+## Basic Color
+----------------------------------------------------------------*/
 /**
  Theme Name: Type_theme_name
  Author: Type_name
@@ -10,27 +13,16 @@
 2. Spacing
 3. Variable
 4. General Style
-5. 
-6.
-7.
-8.
-9.
-10.
-11.
-12.
-13.
-14.
-15.
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
 /*Google Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Mulish&family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 body,
 html {
   color: #707188;
-  font-family: "Work Sans", sans-serif;
+  font-family: system-ui;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6em;
@@ -45,7 +37,7 @@ h3,
 h6 {
   clear: both;
   color: #010A44;
-  font-family: "Work Sans", sans-serif;
+  font-family: system-ui;
   padding: 0;
   margin: 0 0 10px 0;
   font-weight: 700;
@@ -543,7 +535,6 @@ img {
 }
 
 .st_site_header .st_header_top.st_style1 {
-  font-family: "Work Sans", sans-serif;
   height: 40px;
   border-bottom: 1px solid rgba(255, 189, 39, 0.3);
 }
@@ -845,10 +836,6 @@ img {
   background-color: #fff;
 }
 
-.st_single_service.st_style2 .st_service_text div {
-  font-family: "Quicksand", sans-serif;
-}
-
 .st_cta_section.st_style2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -993,7 +980,6 @@ img {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
-  font-family: "Quicksand", sans-serif;
 }
 
 .st_site_footer .st_footer_menu ul li {
@@ -1142,16 +1128,6 @@ img {
   font-weight: 500;
 }
 
-.st_site_footer .st_footer_contact.st_style2 {
-  font-family: "Quicksand", sans-serif;
-}
-
-.st_site_footer .st_subscribe.st_style2 input {
-  background-color: #F8FAFC;
-  margin-right: 15px;
-  color: #707188;
-}
-
 .st_site_footer .st_footer_right {
   margin-left: -50px;
 }
@@ -1164,6 +1140,10 @@ img {
 
 .st_site_footer.st_style2 {
   background-color: #fff;
+}
+
+.st_subscribe_and_footer {
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(176.82deg, rgba(196, 196, 196, 0) 7.79%, #C4C4C4 100.06%);
 }
 
 .st_single_product {
@@ -1454,49 +1434,42 @@ img {
           transform: scale(1.1);
 }
 
-.st_subscribe_section .st_subscribe_content.st_style3 {
-  text-align: center;
-}
-
-.st_subscribe_section .st_subscribe_content.st_style3 h2 {
-  font-size: 20px;
-  line-height: 130%;
+.st_newsletter_content.st_home3 h2 {
   margin-bottom: 15px;
 }
 
-.st_subscribe_section .st_subscribe_content.st_style3 p {
-  font-size: 16px;
-  line-height: 27px;
-  margin-bottom: 0;
-}
-
-.st_subscribe_section .st_subscribe_content.st_style3 .st_subscribe_inline {
+.st_newsletter .st_newsletter_form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-.st_subscribe_section .st_subscribe_content.st_style3 .st_subscribe_inline input {
-  font-size: 16px;
-  line-height: 150%;
-  color: #707188;
+.st_newsletter .st_newsletter_form input {
+  margin-right: 15px;
   border: none;
   padding-left: 30px;
-  width: 600px;
   border-radius: 5px;
-  margin-right: 15px;
+}
+
+.st_newsletter .st_newsletter_form input.st_home2 {
   background-color: #F8FAFC;
+  min-width: 250px;
+}
+
+.st_newsletter .st_newsletter_form input.st_home3 {
+  background-color: #F8FAFC;
+  width: 600px;
 }
 
 @media only screen and (max-width: 991px) {
-  .st_subscribe_section .st_subscribe_content.st_style3 .st_subscribe_inline input {
+  .st_newsletter .st_newsletter_form input.st_home3 {
     width: 400px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .st_subscribe_section .st_subscribe_content.st_style3 .st_subscribe_inline input {
-    width: auto;
+  .st_newsletter .st_newsletter_form input.st_home3 {
+    width: 270px;
   }
 }
 
@@ -1819,14 +1792,6 @@ img {
   text-decoration: none;
   background-color: #F2F3F5;
   font-weight: 600 !important;
-}
-
-.st_addtocart_btn.st_style1 {
-  font-family: "Work Sans", sans-serif;
-}
-
-.st_addtocart_btn.st_style2 {
-  font-family: "Quicksand", sans-serif;
 }
 
 .st_btn.st_style1,

@@ -2,22 +2,18 @@
 |--------------------------------------------------------------------------
 | Theme Fonts
 |-------------------------------------------------------------------------- */
-@import "../default/variable";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
-
+/*--------------------------------------------------------------
+## Basic Color
+----------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 /*
 |--------------------------------------------------------------------------
 | Theme Color Variable
 |-------------------------------------------------------------------------- */
-$themePrimary: #010A44;
-$themeSecondary:  #707188;
-$themeAccent: #FFBD27;
-
 /*
 |--------------------------------------------------------------------------
 | Theme Spacial Style
 |-------------------------------------------------------------------------- */
-
 body,
 .st_secondary_font {
   font-family: 'Work Sans', sans-serif;
@@ -35,5 +31,6 @@ h6 {
 
 body,
 .cs-secondary_color {
-  color: $themeSecondary;
+  color: #707188;
 }
+/*# sourceMappingURL=home_1.css.map */
