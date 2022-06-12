@@ -1,12 +1,19 @@
 // home page 1
-.st_features_product_heading {
-  font-size: 48px;
-  line-height: 110%;
+.st_heading_text_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba($primary, 0.1);
+  margin-bottom: 25px;
 }
-.st_features_product_heading.st_furniture {
-  font-size: 38px;
-  line-height: 120%;
+.st_section_heading.st_home1{
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  margin: 0;
+  padding-bottom: 10px;
 }
+
 
 // home page 2
 .st_section_heading.st_home2 {
