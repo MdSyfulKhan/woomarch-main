@@ -7,15 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home2</title>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <!--bootstrap stylesheet-->
-  <link rel="stylesheet" href="assets/css/plugins/"><!-- plugins stylesheet-->
+  <link rel="stylesheet" href="assets/css/plugins/">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/home_2.css">
-  <!--main stylesheet-->
 </head>
 
 <body>
@@ -26,7 +22,8 @@
           <div class="container max_container">
             <div class="st_header_top_in">
               <div class="st_header_top_left st_style2">
-                <label class="st_style1 st_color2">Message</label> Welcome to woomarch message text / text add or
+                <span class="st_message st_style1 st_color3">Message</span> Welcome to woomarch message text / text add
+                or
                 remove it..!
               </div>
               <div class="st_header_top_right">
@@ -110,7 +107,7 @@
     <!--Start: Hero section-->
     <section>
       <div class="st_hero">
-        <div class="st_single_slider st_bg" style="background-image: url('assets/images/hero/1.png');">
+        <div class="st_single_slider st_bg" data-src="assets/images/hero/1.png">
           <div class="container max_container">
             <div class="st_hero_content">
               <div class="st_caption">Mega Sale Don’t Miss Out!</div>
@@ -183,7 +180,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/84.png" alt="">
-                  <label for="">Diagnostic</label>
+                  <h6>Diagnostic</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -192,7 +189,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/85.png" alt="">
-                  <label for="">Antiseptic</label>
+                  <h6>Antiseptic</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -201,7 +198,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/86.png" alt="">
-                  <label for="">Homeopathy</label>
+                  <h6>Homeopathy</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -210,7 +207,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/87.png" alt="">
-                  <label for="">Pharmacy</label>
+                  <h6>Pharmacy</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -219,7 +216,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/88.png" alt="">
-                  <label for="">Accessories</label>
+                  <h6>Accessories</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -228,7 +225,7 @@
               <a href="#" class="st_single_catagory">
                 <div class="st_catagory_content">
                   <img src="assets/images/product/89.png" alt="">
-                  <label for="">Equipment</label>
+                  <h6>Equipment</h6>
                 </div>
               </a>
               <div class="st_h_lg_25 st_h_25"></div>
@@ -244,10 +241,10 @@
     <section>
       <div class="st_best_selling_product">
         <div class="container max_container">
-          <div class="st_grid_container_layout_5">
-            <div class="st_single_items st_col1_row1_span">
-              <div class="h-100 d-flex align-items-center">
-                <div>
+          <div class="st_product_container st_style2">
+            <div class="st_product_container_in">
+              <div class="st_product_container_left">
+                <div class="st_best_selling_content">
                   <div class="st_best_selling_text">
                     <div class="st_caption">Don’t Miss Out!</div>
                     <h2>Best Selling Products</h2>
@@ -256,80 +253,88 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="st_single_items">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">New</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/40.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+              <div class="st_product_container_right">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="st_single_product">
+                      <a href="#" class="st_product_top st_style2">
+                        <div class="st_label st_style2 st_color2">New</div>
+                        <div class="st_product_top_in st_style2">
+                          <img src="assets/images/product/40.png" alt="">
+                          <ul class="st_mp0">
+                            <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="st_product_bottom st_style2">
+                        <a class="st_product_name" href="#">Electronic tonometer</a>
+                        <div class="st_price">$250 <span>$275</span></div>
+                        <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                      </div>
+                    </div>
+                    <div class="st_h_lg_25 st_h_25"></div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Electronic tonometer</a>
-                  <div class="st_price">$250 <span>$275</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="st_single_items">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">New Arrival</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/41.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="st_single_product">
+                      <a href="#" class="st_product_top st_style2">
+                        <div class="st_label st_style2 st_color2">New Arrival</div>
+                        <div class="st_product_top_in st_style2">
+                          <img src="assets/images/product/41.png" alt="">
+                          <ul class="st_mp0">
+                            <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="st_product_bottom st_style2">
+                        <a class="st_product_name" href="#">Digital thermometer</a>
+                        <div class="st_price">$250 <span>$275</span></div>
+                        <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                      </div>
+                    </div>
+                    <div class="st_h_lg_25 st_h_25"></div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Digital thermometer</a>
-                  <div class="st_price">$250 <span>$275</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="st_single_items">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">Featured Product</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/42.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="st_single_product">
+                      <a href="#" class="st_product_top st_style2">
+                        <div class="st_label st_style2 st_color2">Featured Product</div>
+                        <div class="st_product_top_in st_style2">
+                          <img src="assets/images/product/42.png" alt="">
+                          <ul class="st_mp0">
+                            <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="st_product_bottom st_style2">
+                        <a class="st_product_name" href="#">Covid 19 vaccine</a>
+                        <div class="st_price">$250 <span>$275</span></div>
+                        <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                      </div>
+                    </div>
+                    <div class="st_h_lg_25 st_h_25"></div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Covid 19 vaccine</a>
-                  <div class="st_price">$250 <span>$275</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
-                </div>
-              </div>
-            </div>
-            <div class="st_single_items">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">-20%</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/43.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="st_single_product">
+                      <a href="#" class="st_product_top st_style2">
+                        <div class="st_label st_style2 st_color2">-20%</div>
+                        <div class="st_product_top_in st_style2">
+                          <img src="assets/images/product/43.png" alt="">
+                          <ul class="st_mp0">
+                            <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                          </ul>
+                        </div>
+                      </a>
+                      <div class="st_product_bottom st_style2">
+                        <a class="st_product_name" href="#">Blood sample test tube</a>
+                        <div class="st_price">$250 <span>$275</span></div>
+                        <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                      </div>
+                    </div>
+                    <div class="st_h_lg_25 st_h_25"></div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Blood sample test tube</a>
-                  <div class="st_price">$250 <span>$275</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
                 </div>
               </div>
             </div>
@@ -348,9 +353,9 @@
             <h2>Trending Items</h2>
             <a href="#" class="st_arrow_link">Browse More <i class="fa-solid fa-arrow-right-long"></i></a>
           </div>
-          <div class="st_grid_container_layout_5">
-            <div class="st_grid_items st_col1_row2_span">
-              <div class="st_tranding_banner  st_bg h-100" style="background:url('assets/images/banner/4.png')">
+          <div class="st_product_container_in">
+            <div class="st_product_container_left">
+              <div class="st_tranding_banner  st_bg" data-src="assets/images/banner/4.png">
                 <div class="st_discount_text">
                   <p>Up to<br><span>10%</span><br>discount</p>
                 </div>
@@ -363,155 +368,167 @@
                 <a href="#" class="st_arrow_link">Shop now <i class="fa-solid fa-arrow-right-long"></i></a>
               </div>
             </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">-05%</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/44.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+            <div class="st_product_container_right">
+              <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">-05%</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/44.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Covid surgical mask</a>
+                      <div class="st_price">$5 <span>$6</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Covid surgical mask</a>
-                  <div class="st_price">$5 <span>$6</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">-20%</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/45.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">-20%</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/45.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Covid hand sanitizer</a>
+                      <div class="st_price">$6 <span>$8</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Covid hand sanitizer</a>
-                  <div class="st_price">$6 <span>$8</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">Hot Deal</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/46.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">Hot Deal</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/46.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Homeopathy madicine</a>
+                      <div class="st_price">$105 <span>$110</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Homeopathy madicine</a>
-                  <div class="st_price">$105 <span>$110</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">New Arrival</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/47.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">New Arrival</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/47.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Modern device teeth care</a>
+                      <div class="st_price">$3 <span>$3.5</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Modern device teeth care</a>
-                  <div class="st_price">$3 <span>$3.5</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">-45%</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/48.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">-45%</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/48.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Surgery accessories</a>
+                      <div class="st_price">$11 <span>$18</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Surgery accessories</a>
-                  <div class="st_price">$11 <span>$18</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">New Arrival</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/49.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">New Arrival</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/49.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Temperature gun</a>
+                      <div class="st_price">$180 <span>$188</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Temperature gun</a>
-                  <div class="st_price">$180 <span>$188</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">-30%</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/50.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">-30%</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/50.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Medicine monitoring</a>
+                      <div class="st_price">$166 <span>$180</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Medicine monitoring</a>
-                  <div class="st_price">$166 <span>$180</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
-              </div>
-            </div>
-            <div class="st_single_item">
-              <div class="st_single_product">
-                <a href="#" class="st_product_top st_style2">
-                  <div class="st_label st_style2 st_color2">Hot Deal</div>
-                  <div class="st_product_top_in st_style2">
-                    <img src="assets/images/product/51.png" alt="">
-                    <ul class="st_mp0">
-                      <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
-                      <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
-                    </ul>
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                  <div class="st_single_product">
+                    <a href="#" class="st_product_top st_style2">
+                      <div class="st_label st_style2 st_color2">Hot Deal</div>
+                      <div class="st_product_top_in st_style2">
+                        <img src="assets/images/product/51.png" alt="">
+                        <ul class="st_mp0">
+                          <li><a href="#"><i class="fa-solid fa-eye"></i></a></li>
+                          <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                        </ul>
+                      </div>
+                    </a>
+                    <div class="st_product_bottom st_style2">
+                      <a class="st_product_name" href="#">Digital microscope</a>
+                      <div class="st_price">$560 <span>$600</span></div>
+                      <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                    </div>
                   </div>
-                </a>
-                <div class="st_product_bottom st_style2">
-                  <a class="st_product_name" href="#">Digital microscope</a>
-                  <div class="st_price">$560 <span>$600</span></div>
-                  <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
               </div>
             </div>
@@ -526,10 +543,9 @@
       <div class="st_tranding_products">
         <div class="st_h_lg_100 st_h_100"></div>
         <div class="container max_container">
-          <div class="st_grid_container_in">
-            <div class="st_gird_container_left">
-              <div class="st_new_arrival_banner h-100 st_bg"
-                style="background-image: url('assets/images/banner/5.png');">
+          <div class="st_product_container_in">
+            <div class="st_product_container_left">
+              <div class="st_new_arrival_banner st_bg" data-src="assets/images/banner/5.png">
                 <h3>Up to<br><span>80%</span><br>OFF.</h3>
                 <h4>All Products</h4>
                 <div>
@@ -541,9 +557,8 @@
                 <div class="st_h_25 st_h_lg_25"></div>
                 <a href="#" class="st_arrow_link">Shop now<i class="fa-solid fa-arrow-right-long"></i></a>
               </div>
-              <div class="st_h_lg_25 st_h_25"></div>
             </div>
-            <div class="st_gird_container_right">
+            <div class="st_product_container_right">
               <div class="row">
                 <div class="col-12">
                   <div class="st_section_heading st_home2">
@@ -569,7 +584,7 @@
                       <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
                     </div>
                   </div>
-                  <div class="st_h_lg_25"></div>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="st_single_product">
@@ -589,7 +604,7 @@
                       <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
                     </div>
                   </div>
-                  <div class="st_h_lg_25"></div>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="st_single_product">
@@ -609,7 +624,7 @@
                       <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
                     </div>
                   </div>
-                  <div class="st_h_lg_25"></div>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                   <div class="st_single_product">
@@ -629,7 +644,7 @@
                       <a href="#" class="st_addtocart_btn st_style2">Add to Cart</a>
                     </div>
                   </div>
-                  <div class="st_h_lg_25"></div>
+                  <div class="st_h_lg_25 st_h_25"></div>
                 </div>
               </div>
             </div>
@@ -1091,12 +1106,9 @@
 
   <!--Start: section-->
   <!--End: section-->
-
+  <script src="assets/js/plugins/jquery.js"></script>
   <script src="assets/js/plugins/vendor/"></script>
-  <!--jquery script-->
-  <script src="assets/js/plugins/"></script><!-- plugins script-->
   <script src="assets/js/main.js"></script>
-  <!--main script-->
 </body>
 
 </html>

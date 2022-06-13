@@ -15,14 +15,6 @@
   margin-bottom: 5px;
 }
 
-// home 1
-.st_features_product.st_home1 {
-  .st_features_product_container {
-    padding: 50px;
-    background-color: $light-gray2;
-    padding-bottom: 25px;
-  }
-}
 //Featured Product // furniture
 .st_features_product_banner {
   .st_caption {
@@ -251,30 +243,28 @@
       margin-right: 3px;
     }
     .st_btn {
-      padding: 11px 26px;
+      padding-right: 26.5px;
+      padding-left: 26.5px;
       margin-top: 15px;
     }
   }
 }
 
 //home page 2best_selling_product
-.st_best_selling_product .container .max_container {
-  background-color: $light-gray2;
-  padding: 30px 50px;
-}
-
-.st_best_selling_product .st_best_selling_text {
-  h2 {
-    font-size: 38px;
-    font-weight: 600;
+.st_best_selling_content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .st_best_selling_text {
+    margin-top: -15px;
   }
 }
-
 // home page 2 tranding_banner
 .st_tranding_banner {
   text-align: center;
   padding: 35px 20px;
   border-radius: 5px;
+  height: calc(100% - 25px) !important;
   .st_discount_text {
     height: 125px;
     width: 125px;
@@ -315,6 +305,7 @@
   background-color: $light-gray2;
   padding: 20px;
   text-align: center;
+  height: calc(100% - 25px) !important;
   h3 {
     font-size: 32px;
     line-height: 120%;

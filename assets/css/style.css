@@ -498,24 +498,24 @@ img {
   border-radius: 5px;
 }
 
-.st_site_header label.st_style1 {
+.st_site_header .st_message.st_style1 {
   padding: 3px 15px;
   font-size: 14px;
   border-radius: 3px;
   margin-right: 15px;
 }
 
-.st_site_header label.st_style1.st_color1 {
+.st_site_header .st_message.st_style1.st_color1 {
   background-color: #FFBD27;
   color: #010A44;
 }
 
-.st_site_header label.st_style1.st_color2 {
+.st_site_header .st_message.st_style1.st_color2 {
   background-color: #4285F4;
   color: #fff;
 }
 
-.st_site_header label.st_style1.st_color3 {
+.st_site_header .st_message.st_style1.st_color3 {
   background-color: #4285F4;
   color: #fff;
 }
@@ -764,7 +764,7 @@ img {
   font-size: 52px;
 }
 
-.st_product_catagory .st_single_catagory {
+.st_single_catagory {
   color: #010A44;
   padding: 15px;
   background-color: #fff;
@@ -773,16 +773,22 @@ img {
   text-decoration: none;
 }
 
-.st_product_catagory .st_single_catagory .st_catagory_content {
+.st_single_catagory .st_catagory_content {
   text-align: center;
 }
 
-.st_product_catagory .st_single_catagory .st_catagory_content img {
+.st_single_catagory .st_catagory_content img {
   margin-bottom: 15px;
 }
 
+.st_single_catagory .st_catagory_content h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
 @media screen and (max-width: 767px) {
-  .st_product_catagory .st_catagory_content img {
+  .st_catagory_content img {
     display: block;
     margin: auto;
     width: 100%;
@@ -1606,12 +1612,6 @@ img {
   margin-bottom: 5px;
 }
 
-.st_features_product.st_home1 .st_features_product_container {
-  padding: 50px;
-  background-color: #F2F3F5;
-  padding-bottom: 25px;
-}
-
 .st_features_product_banner .st_caption {
   margin-bottom: 8px;
   font-size: 16px;
@@ -1887,24 +1887,30 @@ img {
 }
 
 .st_single_banner_three .st_banner_three_text .st_btn {
-  padding: 11px 26px;
+  padding-right: 26.5px;
+  padding-left: 26.5px;
   margin-top: 15px;
 }
 
-.st_best_selling_product .container .max_container {
-  background-color: #F2F3F5;
-  padding: 30px 50px;
+.st_best_selling_content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.st_best_selling_product .st_best_selling_text h2 {
-  font-size: 38px;
-  font-weight: 600;
+.st_best_selling_content .st_best_selling_text {
+  margin-top: -15px;
 }
 
 .st_tranding_banner {
   text-align: center;
   padding: 35px 20px;
   border-radius: 5px;
+  height: calc(100% - 25px) !important;
 }
 
 .st_tranding_banner .st_discount_text {
@@ -1956,6 +1962,7 @@ img {
   background-color: #F2F3F5;
   padding: 20px;
   text-align: center;
+  height: calc(100% - 25px) !important;
 }
 
 .st_new_arrival_banner h3 {
@@ -2050,7 +2057,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  padding: 11px 34px;
+  padding: 8px 34.5px;
   border-radius: 3px;
   border: none;
   outline: none;
@@ -2123,6 +2130,35 @@ button.st_btn.st_style3 {
   padding: 14px 20px;
   background-color: #010A44;
   color: #fff;
+}
+
+.st_product_container_in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.st_product_container_in .st_product_container_left {
+  display: block;
+  width: calc(100% - (80% + 20px));
+  margin-right: 12px;
+}
+
+.st_product_container_in .st_product_container_right {
+  display: block;
+  width: calc(100% - 20%);
+  margin-left: 13px;
+}
+
+.st_product_container.st_style1 {
+  padding: 50px;
+  background-color: #F2F3F5;
+}
+
+.st_product_container.st_style2 {
+  padding: 30px;
+  padding-bottom: 5px;
+  background-color: rgba(1, 10, 68, 0.02);
 }
 
 .st_grid_container_layout_5 {
@@ -2254,11 +2290,17 @@ button.st_btn.st_style3 {
 }
 
 @media only screen and (max-width: 1400px) {
-  .st_cta_section.st_style2 {
-    background-position: -500px center;
+  .st_product_container_in {
+    display: block;
   }
-  .st_cta_section.st_style2 .st_cta_content.st_style2 .st_offer_text {
-    margin-right: 0;
+  .st_product_container_in .st_product_container_left {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .st_product_container_in .st_product_container_right {
+    margin-left: 0;
+    width: 100%;
   }
 }
 
