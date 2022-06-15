@@ -1,6 +1,7 @@
 
 $(function () {
   dynamicBackground();
+  tabs()
 });
 
 
@@ -24,16 +25,29 @@ function dynamicBackground() {
   #. Slick Slider
 --------------------------------------------------------------*/
 $('.st_slider_wrapper').slick({
-  dots: true,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 10000,
   infinite: true,
-  speed: 300,
   slidesToShow: 1,
   adaptiveHeight: true,
-  dots:false
+  dots:false,
+  prevArrow: "<i class='fa-solid fa-chevron-left'></i>",
+  nextArrow: "<i class='fa-solid fa-chevron-right'></i>"
 });
 
+  /*--------------------------------------------------------------
+    15. Tabs
+  --------------------------------------------------------------*/
+  function tabs() {
+    $(".st_tabs .st_tab_links a").on("click", function (e) {
+      var currentAttrValue = $(this).attr("href");
+      $(".st_tabs " + currentAttrValue)
+        .siblings()
+        .hide();
+      $(this).parents("li").addClass("active").siblings().removeClass("active");
+      e.preventDefault();
+    });
+  }
 
 
 

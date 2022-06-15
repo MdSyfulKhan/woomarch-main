@@ -1,32 +1,23 @@
 // home page 1
-.st_heading_text_wrapper{
+.st_section_heading_text {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid rgba($primary, 0.1);
   margin-bottom: 25px;
 }
-.st_section_heading.st_home1{
+.st_heading.st_style1 {
   font-weight: 600;
   font-size: 26px;
   line-height: 130%;
   margin: 0;
   padding-bottom: 10px;
 }
-
-
 // home page 2
-.st_section_heading.st_home2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba($primary,0.1);
-  margin-bottom: 25px;
-  h2 {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 130%;
-  }
+.st_heading.st_style2 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
 }
 
 // home page 3
