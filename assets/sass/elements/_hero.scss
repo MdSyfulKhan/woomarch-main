@@ -1,5 +1,5 @@
 .st_hero{
-  .st_single_slider{
+  .st_hero_slider.st_home2{
     height: 725px;
     width: 100%;
     display: flex;
@@ -28,4 +28,22 @@
       font-size: 52px;
     }
   }
+}
+.slick-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  content: "";
+}
+.slick-prev{
+  left:50px;
+  z-index: 111;
+}
+.slick-next{
+  right: 50px;
 }

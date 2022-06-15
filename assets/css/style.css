@@ -729,7 +729,7 @@ img {
   font-weight: 600;
 }
 
-.st_hero .st_single_slider {
+.st_hero .st_hero_slider.st_home2 {
   height: 725px;
   width: 100%;
   display: -webkit-box;
@@ -762,6 +762,28 @@ img {
 
 .st_hero .st_hero_content.st_style3 h1 {
   font-size: 52px;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  content: "";
+}
+
+.slick-prev {
+  left: 50px;
+  z-index: 111;
+}
+
+.slick-next {
+  right: 50px;
 }
 
 .st_single_catagory {
@@ -2167,10 +2189,6 @@ button.st_btn.st_style3 {
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
   grid-gap: 25px;
-}
-
-.st_grid_container_layout_5 .st_col1_row1_span {
-  padding: 30px 0;
 }
 
 .st_grid_container_in {
