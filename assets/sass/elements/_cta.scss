@@ -1,59 +1,61 @@
-
 //
 .st_cta_section.st_style2 {
   display: flex;
   align-items: center;
   position: relative;
   height: 590px;
-  &::before {
+  .st_content_wrapper {
+    display: flex;
+    align-items: center;
     position: absolute;
-    content: "";
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     background: linear-gradient(
       130.76deg,
       $light-gray2 52.92%,
       rgba(0, 0, 0, 0) 52.96%
     );
   }
-  .st_cta_content.st_style2 {
-    position: relative;
+  .st_cta_content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 1;
-    .st_cta_text{
+    .st_text {
       color: $primary;
-      h2{
+      h2 {
         font-size: 52px;
+        font-family: 'Work Sans';
       }
-      .st_countdown{
-        font-size: 32px;
-        line-height: 1;
-        .st_time{
-          font-size: 52px;
+      .st_countdown {
+        h3 {
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 120%;
+          margin-bottom: 0;
+        }
+        & > div {
           font-weight: 600;
+          font-size: 56px;
+          line-height: 100%;
         }
       }
     }
-    .st_offer_text {
-      margin-right: 570px;
+    .st_circle {
       height: 190px;
       width: 190px;
-      border-radius: 50%;
-      background-color: #fff;
-      text-align: center;
-      font-size: 42px;
-      color: $red;
-      line-height: 1;
+      margin-left: 110px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 700;
-      .st_discount_text.st_style2 {
-        font-size: 72px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 50%;
+      h2 {
+        font-size: 42px;
+        color: $red;
+        margin-bottom: 0;
+        span {
+          font-size: 72px;
+        }
       }
     }
   }

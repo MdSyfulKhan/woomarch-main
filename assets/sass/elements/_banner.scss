@@ -14,7 +14,9 @@
   color: $red;
   margin-bottom: 5px;
 }
-
+/*---------------------------------------------
+  // home page 2
+---------------------------------------------*/
 //Featured Product // furniture
 .st_features_product_banner {
   .st_caption {
@@ -28,8 +30,7 @@
   }
   p {
     margin-bottom: 20px;
-  } //done
-  // furniture heading
+  }
   h2.st_furniture {
     font-size: 38px;
     line-height: 120%;
@@ -224,7 +225,10 @@
   }
 }
 
-// home page 2 three_banner
+/*---------------------------------------------
+  // home page 2
+---------------------------------------------*/
+// three banner
 .st_single_banner_three {
   position: relative;
   overflow: hidden;
@@ -249,8 +253,7 @@
     }
   }
 }
-
-//home page 2best_selling_product
+// best_selling_product
 .st_best_selling_content {
   height: 100%;
   display: flex;
@@ -259,7 +262,7 @@
     margin-top: -15px;
   }
 }
-// home page 2 tranding_banner
+// tranding_banner
 .st_tranding_banner {
   text-align: center;
   padding: 35px 20px;
@@ -299,8 +302,7 @@
     color: $primary;
   }
 }
-
-// home page 2 new_arrival_banner
+//new_arrival_banner
 .st_new_arrival_banner {
   background-color: $light-gray2;
   padding: 20px;
@@ -332,7 +334,9 @@
   }
 }
 
-// home page 3
+/*---------------------------------------------
+  // home page 2
+---------------------------------------------*/
 .st_single_banner.st_home_3.st_banner_1 {
   height: 408px;
   display: flex;

@@ -36,14 +36,16 @@ $('.st_slider_wrapper').slick({
 });
 
   /*--------------------------------------------------------------
-    15. Tabs
+    #. Tabs
   --------------------------------------------------------------*/
   function tabs() {
     $(".st_tabs .st_tab_links a").on("click", function (e) {
-      var currentAttrValue = $(this).attr("href");
+      const currentAttrValue = $(this).attr("href");
       $(".st_tabs " + currentAttrValue)
+        .fadeIn(400)
         .siblings()
         .hide();
+        
       $(this).parents("li").addClass("active").siblings().removeClass("active");
       e.preventDefault();
     });
