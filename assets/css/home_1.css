@@ -33,4 +33,10 @@ body,
 .cs-secondary_color {
   color: #707188;
 }
+
+.st_product_container_in.st_style1 {
+  background-color: #F2F3F5;
+  padding: 50px;
+  padding-bottom: 25px;
+}
 /*# sourceMappingURL=home_1.css.map */

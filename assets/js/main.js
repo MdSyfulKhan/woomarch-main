@@ -45,7 +45,6 @@ $('.st_slider_wrapper').slick({
         .fadeIn(400)
         .siblings()
         .hide();
-        
       $(this).parents("li").addClass("active").siblings().removeClass("active");
       e.preventDefault();
     });

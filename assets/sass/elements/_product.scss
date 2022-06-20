@@ -17,6 +17,10 @@
   border-radius: 6px;
   transition: 0.3s;
   overflow: hidden;
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px 5px rgba($primary,0.05);
+  }
   //product top common style
   img {
     transition: inherit;
@@ -138,7 +142,7 @@
       line-height: 16px;
     }
   }
-  /*----hover effect product style 1----*/
+  /*----hover style 1----*/
   &:hover .st_product_bottom.st_style1 .st_addtocart_btn {
     background-color: $yellow;
     &:hover {
@@ -182,7 +186,7 @@
       line-height: 18px;
     }
   }
-  /*----hover effect product style 2----*/
+  /*----hover style 2----*/
   &:hover .st_product_top.st_style2 .st_product_top_in ul {
     top: 50%;
     left: 50%;

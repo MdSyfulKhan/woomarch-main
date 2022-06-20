@@ -15,10 +15,10 @@
   margin-bottom: 5px;
 }
 /*---------------------------------------------
-  // home page 2
+  // home page 1
 ---------------------------------------------*/
 //Featured Product // furniture
-.st_features_product_banner {
+.st_features_product_banner.st_style1 {
   .st_caption {
     margin-bottom: 8px;
     font-size: 16px;
@@ -34,11 +34,10 @@
   h2.st_furniture {
     font-size: 38px;
     line-height: 120%;
-  } // done
+  }
 }
-
 //Clothing & Fashion
-.st_clothing_fashion_banner1 {
+.st_clothing_fashion_banner.st_style1 {
   padding: 85px 45px;
   background-color: $light-gray2;
   height: calc(100% - 25px);
@@ -55,8 +54,8 @@
     line-height: 120%;
   } //done
 }
-// Clothing & Fashion banner coupon
-.st_coupon_banner {
+// Clothing & Fashion coupon banner 
+.st_coupon_banner.st_style1 {
   min-height: 95px;
   display: flex;
   align-items: center;
@@ -103,7 +102,7 @@
   }
 }
 // madical top banner
-.st_madicle_banner {
+.st_madicle_banner.st_style1 {
   display: flex;
   align-items: center;
   min-height: 150px;
@@ -140,7 +139,7 @@
 // medical left banner
 .st_madical_left_banner {
   background: #e6f2f8;
-  height: calc(100% - 25px);
+  height: 100%;
   background-position: center bottom;
   background-repeat: no-repeat;
   padding: 38px 29px;
@@ -157,7 +156,8 @@
     }
   }
 }
-.st_electronics_left_banner {
+// electronics left banner
+.st_electronics_left_banner.st_style1 {
   padding: 15px;
   padding-left: 30px;
   padding-top: 50px;
@@ -196,7 +196,7 @@
   }
 }
 
-.st_electronics_banner2 {
+.st_electronics_banner.st_style1 {
   min-height: 150px;
   display: flex;
   align-items: center;
