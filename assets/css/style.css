@@ -1166,6 +1166,16 @@ img {
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(176.82deg, rgba(196, 196, 196, 0) 7.79%, #C4C4C4 100.06%);
 }
 
+.st_product_container.st_style1 {
+  background-color: #F2F3F5;
+  padding: 50px;
+}
+
+.st_product_container.st_style2 {
+  background-color: #F2F3F5;
+  padding: 30px;
+}
+
 .st_label {
   color: #fff;
   padding: 3px 15px;
@@ -1844,28 +1854,23 @@ img {
   margin-top: 15px;
 }
 
-.st_best_selling_content {
+.st_best_selling_content.st_style2 {
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-left: 20px;
 }
 
-.st_best_selling_content .st_best_selling_text {
+.st_best_selling_content.st_style2 .st_best_selling_text {
   margin-top: -15px;
 }
 
-.st_tranding_banner {
+.st_tranding_banner.st_style2 {
   text-align: center;
   padding: 35px 20px;
   border-radius: 5px;
-  height: calc(100% - 25px) !important;
+  height: 100%;
 }
 
-.st_tranding_banner .st_discount_text {
+.st_tranding_banner.st_style2 .st_discount_text {
   height: 125px;
   width: 125px;
   display: -webkit-box;
@@ -1884,20 +1889,20 @@ img {
   margin-bottom: 8px;
 }
 
-.st_tranding_banner .st_discount_text p {
+.st_tranding_banner.st_style2 .st_discount_text p {
   margin: 0;
   font-weight: 700;
 }
 
-.st_tranding_banner .st_discount_text p span {
+.st_tranding_banner.st_style2 .st_discount_text p span {
   font-size: 30px;
 }
 
-.st_tranding_banner h2 {
+.st_tranding_banner.st_style2 h2 {
   font-size: 32px;
 }
 
-.st_tranding_banner .st_coupone_code {
+.st_tranding_banner.st_style2 .st_coupone_code {
   padding: 8px 42px;
   outline: 1px dashed #fff;
   border-radius: 5px;
@@ -1906,33 +1911,33 @@ img {
   color: #010A44;
 }
 
-.st_tranding_banner a {
+.st_tranding_banner.st_style2 a {
   color: #010A44;
 }
 
-.st_new_arrival_banner {
+.st_new_arrival_banner.st_style2 {
   background-color: #F2F3F5;
   padding: 20px;
   text-align: center;
-  height: calc(100% - 25px) !important;
+  height: 100%;
 }
 
-.st_new_arrival_banner h3 {
+.st_new_arrival_banner.st_style2 h3 {
   font-size: 32px;
   line-height: 120%;
 }
 
-.st_new_arrival_banner h3 span {
+.st_new_arrival_banner.st_style2 h3 span {
   font-size: 52px;
   color: #F25C05;
 }
 
-.st_new_arrival_banner h4 {
+.st_new_arrival_banner.st_style2 h4 {
   font-size: 22px;
   font-weight: 400;
 }
 
-.st_new_arrival_banner .st_countdown {
+.st_new_arrival_banner.st_style2 .st_countdown {
   border-radius: 5px;
   padding: 10px 30px;
   background-color: #fff;
@@ -1941,7 +1946,7 @@ img {
   text-align: center;
 }
 
-.st_new_arrival_banner .st_countdown .st_time {
+.st_new_arrival_banner.st_style2 .st_countdown .st_time {
   font-size: 32px;
   font-weight: 600;
 }
@@ -2087,6 +2092,11 @@ button.st_btn.st_style3 {
   color: #fff;
 }
 
+.st_product_container.st_style1 {
+  background-color: #F2F3F5;
+  padding: 50px;
+}
+
 .st_product_container_in {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2097,11 +2107,11 @@ button.st_btn.st_style3 {
   width: 20%;
 }
 
-.st_product_container_in .st_left_width_30 {
-  width: 30%;
+.st_product_container_in .st_left_width_27 {
+  width: 27%;
 }
 
-.st_product_container_in .st_left_width_1_6 {
+.st_product_container_in .st_left_width_16 {
   width: 16.66%;
 }
 
@@ -2161,6 +2171,49 @@ button.st_btn.st_style3 {
   .st_grid_container_layout_5 {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.st_grid_container_layout_4 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .st_grid_container_layout_4 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .st_grid_container_layout_4 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .st_grid_container_layout_4 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .st_grid_container_layout_4 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .st_grid_container_layout_4 {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 

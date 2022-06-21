@@ -254,20 +254,19 @@
   }
 }
 // best_selling_product
-.st_best_selling_content {
+.st_best_selling_content.st_style2 {
   height: 100%;
-  display: flex;
-  align-items: center;
+  padding-left: 20px;
   .st_best_selling_text {
     margin-top: -15px;
   }
 }
 // tranding_banner
-.st_tranding_banner {
+.st_tranding_banner.st_style2 {
   text-align: center;
   padding: 35px 20px;
   border-radius: 5px;
-  height: calc(100% - 25px) !important;
+  height: 100%;
   .st_discount_text {
     height: 125px;
     width: 125px;
@@ -303,11 +302,11 @@
   }
 }
 //new_arrival_banner
-.st_new_arrival_banner {
+.st_new_arrival_banner.st_style2 {
   background-color: $light-gray2;
   padding: 20px;
   text-align: center;
-  height: calc(100% - 25px) !important;
+  height: 100%;
   h3 {
     font-size: 32px;
     line-height: 120%;
