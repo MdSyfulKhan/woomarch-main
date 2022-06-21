@@ -1,4 +1,4 @@
-//product button 
+//product button
 .st_addtocart_btn {
   text-align: center;
   display: block;
@@ -13,10 +13,9 @@
   background-color: $light-gray2;
   font-weight: 600 !important;
 }
-// 
+//
 .st_btn.st_style1,
-.st_btn.st_style2,
-.st_btn.st_style3 {
+.st_btn.st_style2 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -28,25 +27,21 @@
   transition: all 0.4s ease;
   text-decoration: none;
 }
+@media only screen and (max-width: 1200px) {
+  .st_btn.st_style1,
+  .st_btn.st_style2 {
+    padding: 0;
+    padding: 6px 20px;
+  }
+}
 .st_btn.st_style1 {
   font-weight: 600;
+  background-color: $yellow;
+  color: $primary;
 }
 .st_btn.st_style2 {
   font-weight: 500;
-}
-
-.st_btn.st_style1.st_color1 {
-  color: $primary;
-  background-color: $yellow;
-}
-.st_btn.st_style2.st_color2 {
-  color: #fff;
   background-color: $blue;
-}
-.st_btn.st_style3.st_color3 {
-  padding: 16px 34px;
-  border-radius: 0;
-  background-color: $primary;
   color: #fff;
 }
 
@@ -64,7 +59,7 @@ button.st_btn.st_style3 {
   font-size: 16px;
   line-height: 19px;
   border-radius: 3px;
-  &:hover{
+  &:hover {
     transform: translateY(-1px);
   }
 }

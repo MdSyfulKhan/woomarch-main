@@ -54,7 +54,7 @@
     line-height: 120%;
   } //done
 }
-// Clothing & Fashion coupon banner 
+// Clothing & Fashion coupon banner
 .st_coupon_banner.st_style1 {
   min-height: 95px;
   display: flex;
@@ -229,7 +229,7 @@
   // home page 2
 ---------------------------------------------*/
 // three banner
-.st_single_banner_three {
+.st_three_banner.st_style2 {
   position: relative;
   overflow: hidden;
   .st_banner_three_text {
@@ -247,21 +247,55 @@
       margin-right: 3px;
     }
     .st_btn {
-      padding-right: 26.5px;
       padding-left: 26.5px;
+      padding-right: 26.5px;
       margin-top: 15px;
     }
   }
 }
+@media only screen and (max-width: 1200px) {
+  .st_three_banner.st_style2 .st_banner_three_text {
+    .st_caption {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    .st_btn {
+      padding-left: 20.5px;
+      padding-right: 20.5px;
+      margin: 0;
+      margin-top: 8px;
+    }
+  }
+}
+
 // best_selling_product
 .st_best_selling_content.st_style2 {
   height: 100%;
   padding-left: 20px;
+  .st_best_selling_text{
+    h2{
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
+  }
 }
 @media only screen and (max-width: 1400px) {
-  .st_best_selling_content.st_style2{
+  .st_best_selling_content.st_style2 {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .st_best_selling_content.st_style2 {
     padding: 50px 0;
     padding-top: 20px;
+    .st_best_selling_text {
+      h2 {
+        font-size: 26px;
+        margin-bottom: 18px;
+      }
+    }
   }
 }
 
@@ -305,6 +339,22 @@
     color: $primary;
   }
 }
+@media only screen and (max-width: 991px) {
+  .st_tranding_banner.st_style2 {
+    .st_discount_text {
+      height: 100px;
+      width: 100px;
+      p {
+        span {
+          font-size: 18px;
+        }
+      }
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+}
 //new_arrival_banner
 .st_new_arrival_banner.st_style2 {
   background-color: $light-gray2;
@@ -333,6 +383,23 @@
     .st_time {
       font-size: 32px;
       font-weight: 600;
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .st_new_arrival_banner.st_style2 {
+    padding: 50px;
+    h3 {
+      font-size: 22px;
+      span {
+        font-size: 42px;
+      }
+    }
+    h4 {
+      font-size: 16px;
+    }
+    .st_countdown .st_time {
+      font-size: 22px;
     }
   }
 }

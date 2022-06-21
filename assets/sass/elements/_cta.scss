@@ -1,12 +1,8 @@
 //
 .st_cta_section.st_style2 {
-  display: flex;
-  align-items: center;
   position: relative;
   height: 590px;
   .st_content_wrapper {
-    display: flex;
-    align-items: center;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -16,45 +12,73 @@
       rgba(0, 0, 0, 0) 52.96%
     );
   }
-  .st_cta_content {
+  .st_cta_content .st_text {
+    color: $primary;
+    max-width: 700px;
+    h2 {
+      font-size: 52px;
+    }
+    .st_countdown {
+      h3 {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 120%;
+        margin-bottom: 0;
+      }
+      & > div {
+        font-weight: 600;
+        font-size: 56px;
+        line-height: 100%;
+      }
+    }
+  }
+  .st_offer_box {
+    margin-left: 60px;
+  }
+  .st_circle {
+    height: 190px;
+    width: 190px;
     display: flex;
     align-items: center;
-    .st_text {
-      color: $primary;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    h2 {
+      font-size: 42px;
+      color: $red;
+      margin-bottom: 0;
+      span {
+        font-size: 72px;
+      }
+    }
+  }
+  @media only screen and (max-width: 1200px) {
+    .st_cta_content .st_text {
       h2 {
-        font-size: 52px;
-        font-family: 'Work Sans';
+        font-size: 32px;
+        margin-bottom: 0;
       }
       .st_countdown {
         h3 {
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 120%;
-          margin-bottom: 0;
+          font-size: 18px;
         }
         & > div {
-          font-weight: 600;
-          font-size: 56px;
-          line-height: 100%;
+          font-size: 26px;
         }
       }
     }
+    .st_offer_box {
+      margin-left: 20px ;
+    }
     .st_circle {
-      height: 190px;
-      width: 190px;
-      margin-left: 110px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-color: #fff;
-      border-radius: 50%;
+      height: 150px !important;
+      width: 150px !important;
+      margin: 0;
       h2 {
-        font-size: 42px;
-        color: $red;
-        margin-bottom: 0;
+        font-size: 22px;
         span {
-          font-size: 72px;
+          font-size: 52px;
         }
       }
     }
