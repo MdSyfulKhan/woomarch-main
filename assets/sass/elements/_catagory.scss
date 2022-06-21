@@ -1,12 +1,12 @@
 // catagory product
 .st_single_catagory {
-  color: $primary;
   padding: 15px;
   background-color: #fff;
   border-radius: 5px;
-  display: block;
-  text-decoration: none;
   .st_catagory_content {
+    color: $primary;
+    display: block;
+    text-decoration: none;
     text-align: center;
     img {
       margin-bottom: 15px;

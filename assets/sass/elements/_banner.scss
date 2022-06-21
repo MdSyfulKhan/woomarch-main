@@ -257,10 +257,14 @@
 .st_best_selling_content.st_style2 {
   height: 100%;
   padding-left: 20px;
-  .st_best_selling_text {
-    margin-top: -15px;
+}
+@media only screen and (max-width: 1400px) {
+  .st_best_selling_content.st_style2{
+    padding: 50px 0;
+    padding-top: 20px;
   }
 }
+
 // tranding_banner
 .st_tranding_banner.st_style2 {
   text-align: center;
