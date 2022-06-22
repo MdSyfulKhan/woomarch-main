@@ -229,28 +229,10 @@
   // home page 2
 ---------------------------------------------*/
 // three banner
-.st_three_banner.st_style2 {
-  position: relative;
-  overflow: hidden;
-  .st_banner_three_text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 25px;
-    .st_caption {
-      font-weight: 600;
-      font-size: 18px;
-    }
-    span {
-      color: rgba(241, 71, 5, 0.5);
-      text-decoration: line-through;
-      margin-right: 3px;
-    }
-    .st_btn {
-      padding-left: 26.5px;
-      padding-right: 26.5px;
-      margin-top: 15px;
-    }
+.st_banner_three.st_style2 {
+  height: 325px;
+  .st_banner_info{
+    padding-left: 22px;
   }
 }
 @media only screen and (max-width: 1200px) {

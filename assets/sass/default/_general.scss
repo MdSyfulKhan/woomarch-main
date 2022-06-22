@@ -12,10 +12,7 @@
 body,html{
   background-color: $light-gray1;
 }
-
-
-
-.st_radious10{
+.st_radious_10{
   border-radius: 10px;
 }
 
@@ -80,7 +77,6 @@ hr {
     outline: none;
     border-radius: 5px;
   }
-  
 }
 
 .st_white_color,
@@ -92,7 +88,37 @@ hr {
 .st_white_bg_hover:hover {
   background-color: #fff;
 }
+//start opacity
+.st_opacity_01{
+  opacity: 0.10;
+}
+.st_opacity_02{
+  opacity: 0.20;
+}
+.st_opacity_03{
+  opacity: 0.30;
+}
+.st_opacity_04{
+  opacity: 0.40;
+}
+.st_opacity_05{
+  opacity: 0.50;
+}
+.st_opacity_06{
+  opacity: 0.60;
+}
+.st_opacity_07{
+  opacity: 0.70;
+}
+.st_opacity_08{
+  opacity: 0.80;
+}
+.st_opacity_09{
+  opacity: 0.90;
+}
 
+// end opacity
+//start typography
 .st_normal {
   font-weight: 400;
 }
@@ -105,3 +131,63 @@ hr {
 .st_bold {
   font-weight: 700;
 }
+.st_font_14{
+  font-size: 14px;
+}
+.st_font_16{
+  font-size: 16px;
+}
+.st_font_18{
+  font-size: 18px;
+}
+.st_font_20{
+  font-size: 20px;
+}
+.st_font_22{
+  font-size: 22px;
+}
+.st_font_26{
+  font-size: 26px;
+}
+.st_font_30{
+  font-size: 30px;
+}
+.st_font_32{
+  font-size: 32px;
+}
+.st_font_38{
+  font-size: 38px;
+}
+.st_font_42{
+  font-size: 42px;
+}
+.st_font_52{
+  font-size: 52px;
+}
+.st_font_56{
+  font-size: 56px;
+}
+.st_font_62{
+  font-size: 62px;
+}
+.st_font_72{
+  font-size: 72px;
+}
+// .st_font_{
+//   font-size: px;
+// }
+// .st_font_{
+//   font-size: px;
+// }
+// .st_font_{
+//   font-size: px;
+// }
+// .st_font_{
+//   font-size: px;
+// }
+// .st_font_{
+//   font-size: px;
+// }
+// .st_font_{
+//   font-size: px;
+// }

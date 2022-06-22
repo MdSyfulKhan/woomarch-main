@@ -3,16 +3,17 @@
 | Theme Fonts
 |-------------------------------------------------------------------------- */
 @import "./default/variable";
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 /*
 |--------------------------------------------------------------------------
 | Theme Color Variable
 |-------------------------------------------------------------------------- */
-$themePrimary: #010A44;
-$themeSecondary:  #707188;
-$themeTernary:  #F2F3F5;
-$themeAccent: #4285F4;
+$themePrimary: #010a44;
+$themeSecondary: #707188;
+$themeTernary: #f2f3f5;
+$themeAccent: #4285f4;
+$themeAccent2: #f25c05;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,7 +23,7 @@ $themeAccent: #4285F4;
 body,
 .st_secondary_font {
   color: $themeSecondary;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .st_primary_font,
@@ -33,7 +34,7 @@ h4,
 h3,
 h6 {
   color: $themePrimary;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
@@ -57,6 +58,11 @@ a {
   color: $themeAccent;
 }
 
+.st_red_color,
+.st_red_color_hover:hover {
+  color: $themeAccent2;
+}
+
 .st_accent_bg,
 .st_accent_bg_hover:hover {
   background-color: $themeAccent;
@@ -77,8 +83,7 @@ a {
   background-color: $themeTernary;
 }
 
-
 // Theme Spacific style
 .st_product_label {
-  background-color: #F25C05;
+  background-color: $themeAccent2;
 }
