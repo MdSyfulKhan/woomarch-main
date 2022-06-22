@@ -203,25 +203,6 @@
             display: block;
             padding-left: 10px;
           }
-           .st_dropdown_menu {
-            top: 0;
-            left: 120%;
-            border-radius: 5px;
-            transition: inherit;
-            opacity: 0;
-            visibility: hidden;
-            li{
-              a{
-                color: $primary !important;
-              }
-            }
-          }
-          &:hover .st_dropdown_menu {
-            left: 100%;
-            top: 0;
-            opacity: 1;
-            visibility: visible;
-          }
         }
       }
       &:hover ul {
@@ -235,16 +216,19 @@
   &.st_style2 ul {
     li {
       &.active a,
-      &:hover {
-        color: $blue !important;
+      &:hover a{
+        color: $blue;
       }
       ul {
         border-left: 3px solid $blue;
         li {
+          a{
+            color: $primary !important;
+          }
           &:hover {
             background-color: rgba($blue, 0.75);
             a {
-              color: $blue;
+              color: #fff !important;
             }
           }
         }
