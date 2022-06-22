@@ -929,23 +929,32 @@ img {
   background: linear-gradient(130.76deg, #F2F3F5 52.92%, rgba(0, 0, 0, 0) 52.96%);
 }
 
-.st_cta_section.st_style2 .st_cta_content .st_text {
+.st_cta_section.st_style2 .st_cta_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.st_cta_section.st_style2 .st_text {
   color: #010A44;
   max-width: 700px;
 }
 
-.st_cta_section.st_style2 .st_cta_content .st_text h2 {
+.st_cta_section.st_style2 .st_text h2 {
   font-size: 52px;
 }
 
-.st_cta_section.st_style2 .st_cta_content .st_text .st_countdown h3 {
+.st_cta_section.st_style2 .st_text .st_countdown h3 {
   font-weight: 400;
   font-size: 32px;
   line-height: 120%;
   margin-bottom: 0;
 }
 
-.st_cta_section.st_style2 .st_cta_content .st_text .st_countdown > div {
+.st_cta_section.st_style2 .st_text .st_countdown > div {
   font-weight: 600;
   font-size: 56px;
   line-height: 100%;
@@ -982,10 +991,15 @@ img {
   font-size: 72px;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 991px) {
+  .st_cta_section.st_style2 .st_cta_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
   .st_cta_section.st_style2 .st_cta_content .st_text h2 {
     font-size: 32px;
-    margin-bottom: 0;
   }
   .st_cta_section.st_style2 .st_cta_content .st_text .st_countdown h3 {
     font-size: 18px;
@@ -993,18 +1007,21 @@ img {
   .st_cta_section.st_style2 .st_cta_content .st_text .st_countdown > div {
     font-size: 26px;
   }
-  .st_cta_section.st_style2 .st_offer_box {
-    margin-left: 20px;
-  }
-  .st_cta_section.st_style2 .st_circle {
-    height: 150px !important;
-    width: 150px !important;
+  .st_cta_section.st_style2 .st_cta_content .st_offer_box {
     margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
   }
-  .st_cta_section.st_style2 .st_circle h2 {
+  .st_cta_section.st_style2 .st_cta_content .st_circle h2 {
     font-size: 22px;
   }
-  .st_cta_section.st_style2 .st_circle h2 span {
+  .st_cta_section.st_style2 .st_cta_content .st_circle h2 span {
     font-size: 52px;
   }
 }
