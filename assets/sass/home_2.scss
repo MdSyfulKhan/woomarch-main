@@ -11,6 +11,7 @@
 |-------------------------------------------------------------------------- */
 $themePrimary: #010A44;
 $themeSecondary:  #707188;
+$themeTernary:  #F2F3F5;
 $themeAccent: #4285F4;
 
 /*
@@ -20,6 +21,7 @@ $themeAccent: #4285F4;
 
 body,
 .st_secondary_font {
+  color: $themeSecondary;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -30,10 +32,53 @@ h3,
 h4,
 h3,
 h6 {
+  color: $themePrimary;
   font-family: 'Quicksand', sans-serif;
 }
 
-body,
-.cs-secondary_color {
+a {
+  &:hover {
+    color: $themeAccent;
+  }
+}
+
+.st_primary_color,
+.st_primary_color_hover:hover {
+  color: $themePrimary;
+}
+
+.st_secondary_color,
+.st_secondary_color_hover:hover {
   color: $themeSecondary;
+}
+
+.st_accent_color,
+.st_accent_color_hover:hover {
+  color: $themeAccent;
+}
+
+.st_accent_bg,
+.st_accent_bg_hover:hover {
+  background-color: $themeAccent;
+}
+
+.st_primary_bg,
+.st_primary_bg_hover:hover {
+  background-color: $primary;
+}
+
+.st_secondary_bg,
+.st_secondary_bg_hover:hover {
+  background-color: $themeAccent;
+}
+
+.st_ternary_bg,
+.st_ternary_bg_hover:hover {
+  background-color: $themeTernary;
+}
+
+
+// Theme Spacific style
+.st_product_label {
+  background-color: #F25C05;
 }

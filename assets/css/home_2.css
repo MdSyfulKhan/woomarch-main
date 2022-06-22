@@ -16,6 +16,7 @@
 |-------------------------------------------------------------------------- */
 body,
 .st_secondary_font {
+  color: #707188;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -26,11 +27,50 @@ h3,
 h4,
 h3,
 h6 {
+  color: #010A44;
   font-family: 'Quicksand', sans-serif;
 }
 
-body,
-.cs-secondary_color {
+a:hover {
+  color: #4285F4;
+}
+
+.st_primary_color,
+.st_primary_color_hover:hover {
+  color: #010A44;
+}
+
+.st_secondary_color,
+.st_secondary_color_hover:hover {
   color: #707188;
+}
+
+.st_accent_color,
+.st_accent_color_hover:hover {
+  color: #4285F4;
+}
+
+.st_accent_bg,
+.st_accent_bg_hover:hover {
+  background-color: #4285F4;
+}
+
+.st_primary_bg,
+.st_primary_bg_hover:hover {
+  background-color: #010A44;
+}
+
+.st_secondary_bg,
+.st_secondary_bg_hover:hover {
+  background-color: #4285F4;
+}
+
+.st_ternary_bg,
+.st_ternary_bg_hover:hover {
+  background-color: #F2F3F5;
+}
+
+.st_product_label {
+  background-color: #F25C05;
 }
 /*# sourceMappingURL=home_2.css.map */

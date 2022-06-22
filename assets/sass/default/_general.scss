@@ -38,10 +38,7 @@ hr {
   width: 100%;
   background-color: rgba($secondary, 0.15);
 }
-img{
-  height: 100%;
-  width: 100%
-}
+
 .st_flex_center {
   display: flex;
   align-items: center;
@@ -84,4 +81,27 @@ img{
     border-radius: 5px;
   }
   
+}
+
+.st_white_color,
+.st_white_color_hover:hover {
+  color: #fff;
+}
+
+.st_white_bg,
+.st_white_bg_hover:hover {
+  background-color: #fff;
+}
+
+.st_normal {
+  font-weight: 400;
+}
+.st_medium {
+  font-weight: 500;
+}
+.st_semibold {
+  font-weight: 600;
+}
+.st_bold {
+  font-weight: 700;
 }

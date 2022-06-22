@@ -19,8 +19,121 @@
   line-height: 1;
 }
 
+.st_product_label {
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+  padding: 0 15px;
+}
+
 // product
-.st_product {
+.st_product.st_style2 {
+  background-color: #fff;
+  display: block;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  .st_product_thumb {
+    height: 265px;
+    padding: 15px;
+    border-radius: inherit;
+    position: relative;
+    display: block;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      background: #010A44;
+      border-radius: 6px 6px 0px 0px;
+      z-index: 2;
+      opacity: 0;
+      transition: inherit;
+    }
+  }
+  .st_product_in {
+    position: relative;
+    overflow: hidden;
+  }
+  .st_product_icon_btns {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    z-index: 3;
+    opacity: 0;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 38px;
+      width: 38px;
+      border-radius: 50%;
+      margin: 7px;
+    }
+  }
+  .st_product_label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+  }
+  .st_product_btn {
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 20px;
+    border-radius: 3px;
+  }
+  .st_product_info {
+    padding: 15px 20px 20px;
+  }
+  .st_product_price {
+    font-size: 16px;
+    margin-bottom: 12px;
+    span {
+      margin-left: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      color: $secondary;
+      text-decoration: line-through;
+    }
+  }
+  .st_product_title {
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+
+  &:hover {
+    .st_product_thumb {
+      &::before {
+        opacity: 0.32;
+      }
+    }
+    .st_product_icon_btns {
+      top: 50%;
+      opacity: 1;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.st_product.st_style1 {
   background-color: #fff;
   display: block;
   border-radius: 6px;

@@ -1,29 +1,27 @@
 // catagory product
-.st_single_catagory {
-  padding: 15px;
+.st_catagory.st_style1 {
   background-color: #fff;
   border-radius: 5px;
-  .st_catagory_content {
-    color: $primary;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    img {
-      margin-bottom: 15px;
-    }
-    h6 {
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-    }
+  display: block;
+  padding-bottom: 15px;
+  transition: all 0.4s ease;
+  .st_catagory_thumb {
+    border-radius: inherit;
+    height: 160px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .st_category_title {
+    font-size: 16px;
+    margin: 0;
+  }
+  &:hover {
+    transform: scale(1.03);
   }
 }
+
 @media screen and (max-width: 767px) {
-  .st_catagory_content {
-    img {
-      display: block;
-      margin: auto;
-      width: 100%;
-    }
-  }
+
 }
