@@ -420,6 +420,10 @@ body, html {
   border-radius: 10px;
 }
 
+.st_radious_50 {
+  border-radius: 50%;
+}
+
 .st_mp0 {
   list-style: none;
   margin: 0;
@@ -958,7 +962,6 @@ hr {
 }
 
 .st_catagory.st_style1 .st_catagory_thumb {
-  border-radius: inherit;
   height: 160px;
   padding: 15px;
   display: -webkit-box;
@@ -1045,19 +1048,19 @@ hr {
   background-color: #fff;
 }
 
-.st_cta_section.st_style2 {
+.st_cta_section.st_style1 {
   position: relative;
   height: 590px;
 }
 
-.st_cta_section.st_style2 .st_content_wrapper {
+.st_cta_section.st_style1 .st_cta_content_wrapper {
   position: absolute;
   height: 100%;
   width: 100%;
   background: linear-gradient(130.76deg, #F2F3F5 52.92%, rgba(0, 0, 0, 0) 52.96%);
 }
 
-.st_cta_section.st_style2 .st_cta_content {
+.st_cta_section.st_style1 .st_cta_content_in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1066,92 +1069,27 @@ hr {
           align-items: center;
 }
 
-.st_cta_section.st_style2 .st_text {
-  color: #010A44;
-  max-width: 700px;
-}
-
-.st_cta_section.st_style2 .st_text h2 {
-  font-size: 52px;
-}
-
-.st_cta_section.st_style2 .st_text .st_countdown h3 {
-  font-weight: 400;
-  font-size: 32px;
+.st_cta_section.st_style1 .st_cta_title {
   line-height: 120%;
-  margin-bottom: 0;
 }
 
-.st_cta_section.st_style2 .st_text .st_countdown > div {
-  font-weight: 600;
-  font-size: 56px;
+.st_cta_section.st_style1 .st_cta_countdown_title {
+  line-height: 120%;
+  margin: 0;
+}
+
+.st_cta_section.st_style1 .st_cta_countdown_time {
   line-height: 100%;
 }
 
-.st_cta_section.st_style2 .st_offer_box {
-  margin-left: 60px;
+.st_cta_section.st_style1 .st_btn {
+  line-height: 20px;
 }
 
-.st_cta_section.st_style2 .st_circle {
+.st_cta_section.st_style1 .st_cta_offer_info {
   height: 190px;
   width: 190px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 50%;
-}
-
-.st_cta_section.st_style2 .st_circle h2 {
-  font-size: 42px;
-  color: #F25C05;
-  margin-bottom: 0;
-}
-
-.st_cta_section.st_style2 .st_circle h2 span {
-  font-size: 72px;
-}
-
-@media only screen and (max-width: 991px) {
-  .st_cta_section.st_style2 .st_cta_content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_text h2 {
-    font-size: 32px;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_text .st_countdown h3 {
-    font-size: 18px;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_text .st_countdown > div {
-    font-size: 26px;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_offer_box {
-    margin: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 30px;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_circle h2 {
-    font-size: 22px;
-  }
-  .st_cta_section.st_style2 .st_cta_content .st_circle h2 span {
-    font-size: 52px;
-  }
+  margin: 0;
 }
 
 .st_branding .st_grid_container_in {
