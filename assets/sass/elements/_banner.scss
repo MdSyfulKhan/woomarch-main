@@ -228,36 +228,15 @@
 /*---------------------------------------------
   // home page 2
 ---------------------------------------------*/
-// three banner
-.st_banner_three.st_style2 {
-  height: 325px;
-  .st_banner_info{
-    padding-left: 22px;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .st_three_banner.st_style2 .st_banner_three_text {
-    .st_caption {
-      font-size: 14px;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    .st_btn {
-      padding-left: 20.5px;
-      padding-right: 20.5px;
-      margin: 0;
-      margin-top: 8px;
-    }
-  }
-}
+// three cart
+
 
 // best_selling_product
 .st_best_selling_content.st_style2 {
   height: 100%;
   padding-left: 20px;
-  .st_best_selling_text{
-    h2{
+  .st_best_selling_text {
+    h2 {
       font-size: 38px;
       margin-bottom: 25px;
     }

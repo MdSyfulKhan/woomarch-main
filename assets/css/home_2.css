@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 /*
 |--------------------------------------------------------------------------
-| Theme Color Variable
+| Theme Color Variable primary, secondary, tertiary, quaternary, quinary
 |-------------------------------------------------------------------------- */
 /*
 |--------------------------------------------------------------------------
@@ -50,14 +50,19 @@ a:hover {
   color: #4285f4;
 }
 
-.st_red_color,
-.st_red_color_hover:hover {
+.st_accent_color2,
+.st_accent_color2_hover:hover {
   color: #f25c05;
 }
 
 .st_accent_bg,
 .st_accent_bg_hover:hover {
   background-color: #4285f4;
+}
+
+.st_accent_bg2,
+.st_accent_bg2_hover:hover {
+  background-color: #f25c05;
 }
 
 .st_primary_bg,
@@ -73,9 +78,5 @@ a:hover {
 .st_ternary_bg,
 .st_ternary_bg_hover:hover {
   background-color: #f2f3f5;
-}
-
-.st_product_label {
-  background-color: #f25c05;
 }
 /*# sourceMappingURL=home_2.css.map */

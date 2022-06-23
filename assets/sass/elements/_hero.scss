@@ -1,34 +1,19 @@
-.st_hero {
-  .st_hero_slider.st_style2 {
-    height: 725px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    .st_hero_content {
-      h1 {
-        font-size: 62px;
-        margin-bottom: 20px;
-      }
-      p {
-        margin-bottom: 25px;
-        color: $primary;
-      }
-    }
+.st_slider.st_style1{
+  height: 725px;
+  .st_slider_subtitle{
+    line-height: 20px;
   }
-  @media only screen and (max-width: 1200px) {
-    .st_hero_slider.st_style2 {
-      .st_hero_content {
-        padding: 10px;
-        h1 {
-          font-size: 48px;
-        }
-        p {
-          margin-bottom: 25px;
-        }
-      }
-    }
+  .st_slider_title{
+    line-height: 110%; 
+  }
+  .st_slider_paragraph{
+    line-height: 150%; 
+  }
+  .st_btn{
+    line-height: 20px;
   }
 }
+
 .slick-arrow {
   position: absolute;
   top: 50%;

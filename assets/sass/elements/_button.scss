@@ -1,79 +1,8 @@
-//product button
-.st_addtocart_btn {
-  text-align: center;
-  display: block;
-  font-size: 14px;
-  color: $primary;
-  padding: 10px 20px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-  transition: all 0.4s ease;
-  text-decoration: none;
-  background-color: $light-gray2;
-  font-weight: 600 !important;
-}
-//
-.st_btn.st_style1,
-.st_btn.st_style2 {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  padding: 8px 34.5px;
-  border-radius: 3px;
-  border: none;
-  outline: none;
-  transition: all 0.4s ease;
-  text-decoration: none;
-}
-@media only screen and (max-width: 1200px) {
-  .st_btn.st_style1,
-  .st_btn.st_style2 {
-    padding: 0;
-    padding: 6px 20px;
-  }
-}
 .st_btn.st_style1 {
-  font-weight: 600;
-  background-color: $yellow;
-  color: $primary;
+  display: inline-block;
+  padding: 11px 26px;
 }
 .st_btn.st_style2 {
-  font-weight: 500;
-  background-color: $blue;
-  color: #fff;
-}
-
-.st_btn.st_style1:hover,
-.st_btn.st_style2:hover {
-  transform: translateY(-1px);
-  box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.1);
-}
-
-// subscribe btn
-button.st_btn.st_style1,
-button.st_btn.st_style2,
-button.st_btn.st_style3 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  border-radius: 3px;
-  &:hover {
-    transform: translateY(-1px);
-  }
-}
-button.st_btn.st_style1 {
-  padding: 15px 34px;
-  background-color: $yellow;
-}
-button.st_btn.st_style2 {
-  padding: 15px 20px;
-  background-color: $blue;
-  color: #fff;
-}
-button.st_btn.st_style3 {
-  padding: 14px 20px;
-  background-color: $primary;
-  color: #fff;
+  display: inline-block;
+  padding: 11px 34px;
 }

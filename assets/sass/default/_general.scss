@@ -12,6 +12,12 @@
 body,html{
   background-color: $light-gray1;
 }
+.st_radious_3{
+  border-radius: 3px;
+}
+.st_radious_5{
+  border-radius: 5px;
+} 
 .st_radious_10{
   border-radius: 10px;
 }
@@ -83,7 +89,6 @@ hr {
 .st_white_color_hover:hover {
   color: #fff;
 }
-
 .st_white_bg,
 .st_white_bg_hover:hover {
   background-color: #fff;
@@ -116,8 +121,16 @@ hr {
 .st_opacity_09{
   opacity: 0.90;
 }
-
-// end opacity
+// line height
+.st_line_height_px_20{
+  line-height: 20px;
+}
+.st_line_height_percent_120{
+  line-height: 120%;
+}
+.st_line_height_percent_130{
+  line-height: 130%;
+}
 //start typography
 .st_normal {
   font-weight: 400;

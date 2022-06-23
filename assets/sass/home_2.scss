@@ -7,7 +7,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Theme Color Variable
+| Theme Color Variable primary, secondary, tertiary, quaternary, quinary
 |-------------------------------------------------------------------------- */
 $themePrimary: #010a44;
 $themeSecondary: #707188;
@@ -47,43 +47,40 @@ a {
 .st_primary_color_hover:hover {
   color: $themePrimary;
 }
-
 .st_secondary_color,
 .st_secondary_color_hover:hover {
   color: $themeSecondary;
 }
-
 .st_accent_color,
 .st_accent_color_hover:hover {
   color: $themeAccent;
 }
-
-.st_red_color,
-.st_red_color_hover:hover {
+.st_accent_color2,
+.st_accent_color2_hover:hover {
   color: $themeAccent2;
 }
+
+
 
 .st_accent_bg,
 .st_accent_bg_hover:hover {
   background-color: $themeAccent;
 }
-
+.st_accent_bg2,
+.st_accent_bg2_hover:hover {
+  background-color: $themeAccent2;
+}
 .st_primary_bg,
 .st_primary_bg_hover:hover {
   background-color: $primary;
 }
-
 .st_secondary_bg,
 .st_secondary_bg_hover:hover {
   background-color: $themeAccent;
 }
-
 .st_ternary_bg,
 .st_ternary_bg_hover:hover {
   background-color: $themeTernary;
 }
 
 // Theme Spacific style
-.st_product_label {
-  background-color: $themeAccent2;
-}
