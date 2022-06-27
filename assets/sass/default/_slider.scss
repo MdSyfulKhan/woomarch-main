@@ -1,26 +1,23 @@
-.cs-slider {
+.cs_slider {
   position: relative;
 }
-.cs-hidden {
-  display: none;
-}
-.cs-slider_arrows.cs-style1 {
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  border: none;
- &.cs-left_arrow {
-   left: 30px;
- }
- &.cs-right_arrow {
-  right: 30px;
-}
-}
+.cs_slider_arrows.cs_style1 {
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    border: none;
+    &.cs_left_arrow {
+      left: 30px;
+    }
+    &.cs_right_arrow {
+      right: 30px;
+    }
+  }
 }

@@ -1,9 +1,9 @@
-.st_iconbox.st_style1{
+.cs_iconbox.cs_style1{
   min-height: 116px;
   padding: 20px 20px;
   display: flex;
   align-items: center;
-  .st_iconbox_icon {
+  .cs_iconbox_icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@
     flex: none;
     max-width: 48px;
   }
-  .st_iconbox_info{
+  .cs_iconbox_info{
     h2{
       line-height: 150%;
       margin-bottom: 1px;

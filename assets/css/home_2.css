@@ -15,12 +15,12 @@
 | Theme Spacial Style
 |-------------------------------------------------------------------------- */
 body,
-.st_secondary_font {
+.cs_secondary_font {
   color: #707188;
   font-family: "Quicksand", sans-serif;
 }
 
-.st_primary_font,
+.cs_primary_font,
 h1,
 h2,
 h3,
@@ -35,48 +35,53 @@ a:hover {
   color: #4285f4;
 }
 
-.st_primary_color,
-.st_primary_color_hover:hover {
+.cs_primary_color,
+.cs_primary_color_hover:hover {
   color: #010a44;
 }
 
-.st_secondary_color,
-.st_secondary_color_hover:hover {
+.cs_secondary_color,
+.cs_secondary_color_hover:hover {
   color: #707188;
 }
 
-.st_accent_color,
-.st_accent_color_hover:hover {
+.cs_ternary_color,
+.cs_ternary_color_hover:hover {
+  color: #f2f3f5;
+}
+
+.cs_accent_color,
+.cs_accent_color_hover:hover {
   color: #4285f4;
 }
 
-.st_accent_color2,
-.st_accent_color2_hover:hover {
+.cs_accent_color2,
+.cs_accent_color2_hover:hover {
   color: #f25c05;
 }
 
-.st_accent_bg,
-.st_accent_bg_hover:hover {
+.cs_accent_bg,
+.cs_accent_bg_hover:hover {
   background-color: #4285f4;
 }
 
-.st_accent_bg2,
-.st_accent_bg2_hover:hover {
+.cs_accent_bg2,
+.cs_accent_bg2_hover:hover {
   background-color: #f25c05;
 }
 
-.st_primary_bg,
-.st_primary_bg_hover:hover {
-  background-color: #010A44;
+.cs_primary_bg,
+.cs_primary_bg_hover:hover {
+  background-color: #010a44;
 }
 
-.st_secondary_bg,
-.st_secondary_bg_hover:hover {
-  background-color: #4285f4;
+.cs_secondary_bg,
+.cs_secondary_bg_hover:hover {
+  background-color: #707188;
 }
 
-.st_ternary_bg,
-.st_ternary_bg_hover:hover {
+.cs_ternary_bg,
+.cs_ternary_bg_hover:hover {
   background-color: #f2f3f5;
 }
 /*# sourceMappingURL=home_2.css.map */

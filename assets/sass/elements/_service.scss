@@ -1,15 +1,15 @@
-.st_single_service.st_style1,
-.st_single_service.st_style2 {
+.cs_single_service.cs_style1,
+.cs_single_service.cs_style2 {
   padding: 35px 24px;
   border-radius: 3px;
-  .st_single_service_in {
+  .cs_single_service_in {
     display: flex;
     align-items: center;
   }
   img{
     margin-right: 14px;
   }
-  .st_iconbox_text {
+  .cs_iconbox_text {
     div {
       font-size: 20px;
       font-weight: 600;
@@ -21,9 +21,9 @@
     }
   }
 }
-.st_single_service.st_style1{
+.cs_single_service.cs_style1{
   background-color: $light-gray2;
 }
-.st_single_service.st_style2{
+.cs_single_service.cs_style2{
   background-color: #fff;
 }

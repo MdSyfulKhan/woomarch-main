@@ -1,27 +1,14 @@
-.st_hero.st_style1{
+.cs_hero.cs_style1 {
   height: 725px;
-  .st_hero_subtitle{
+  .cs_hero_subtitle{
+    margin-bottom: 5px;
     line-height: 20px;
   }
-  .st_hero_title{
-    line-height: 110%; 
+  .cs_hero_title{
+    margin-bottom: 20px;
+    line-height: 110%;
   }
-  .st_hero_paragraph{
-    line-height: 150%; 
-  }
-  .st_btn{
-    line-height: 20px;
+  .cs_hero_paragraph{
+    margin-bottom: 25px;
   }
 }
-
-// .st_hero_content.st_style3 {
-//   .st_caption {
-//     display: inline-block;
-//     padding: 0 15px;
-//     background-color: $light-gray2;
-//     color: rgba($primary, 0.7);
-//   }
-//   h1 {
-//     font-size: 52px;
-//   }
-// }

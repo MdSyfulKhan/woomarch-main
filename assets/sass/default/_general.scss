@@ -1,72 +1,80 @@
 /*--------------------------------------------------------------
 3. General Style
 ----------------------------------------------------------------*/
-@media only screen and (min-width: 1400px){
-	.max_container{
-		width: 100%;
+@media only screen and (min-width: 1400px) {
+  .max_container {
+    width: 100%;
     max-width: 1620px;
     margin: auto;
-	}
+  }
 }
 
-body,html{
+body,
+html {
   background-color: $light-gray1;
 }
-.st_radious_3{
+.cs_hidden {
+  display: none;
+}
+
+.cs_radius_3 {
   border-radius: 3px;
 }
-.st_radious_5{
+.cs_radius_5 {
   border-radius: 5px;
-} 
-.st_radious_10{
+}
+.cs_radius_10 {
   border-radius: 10px;
 }
-.st_radious_50{
+.cs_radius_50 {
   border-radius: 50%;
 }
 
-.st_mp0 {
+.cs_mp0 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.st_icon{
+.cs_icon {
   height: max-content !important;
   width: max-content !important;
 }
-a.link{
+a.link {
   text-decoration: none;
 }
 
-hr {
+.cs_hr_line {
   margin: 0;
-  width: 100%;
-  background-color: rgba($secondary, 0.15);
+  height: 1px;
+  &.cs_style1 {
+    background: #010a44;
+    opacity: 0.1;
+  }
 }
 
-.st_flex_center {
+.cs_flex_center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.st_vertical_middle {
+.cs_vertical_middle {
   display: flex;
   align-items: center;
   height: 100%;
-  .st_vertical_middle_in {
-      width: 100%;
+  .cs_vertical_middle_in {
+    width: 100%;
   }
 }
 
-.st_bg {
+.cs_bg {
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
 }
 
-.st_sticky_footer {
+.cs_sticky_footer {
   width: 100%;
   position: fixed;
   bottom: 0;
@@ -74,13 +82,13 @@ hr {
   overflow: hidden;
 }
 
-.st_fixed_bg {
+.cs_fixed_bg {
   background-attachment: fixed;
 }
-//subscribe 
-.st_subscribe{
+//subscribe
+.cs_subscribe {
   display: inline-flex;
-  input{
+  input {
     padding: 15px 30px;
     border: none;
     outline: none;
@@ -88,122 +96,122 @@ hr {
   }
 }
 
-.st_white_color,
-.st_white_color_hover:hover {
+.cs_white_color,
+.cs_white_color_hover:hover {
   color: #fff;
 }
-.st_white_bg,
-.st_white_bg_hover:hover {
+.cs_white_bg,
+.cs_white_bg_hover:hover {
   background-color: #fff;
 }
 //start opacity
-.st_opacity_01{
-  opacity: 0.10;
+.cs_opacity_01 {
+  opacity: 0.1;
 }
-.st_opacity_02{
-  opacity: 0.20;
+.cs_opacity_02 {
+  opacity: 0.2;
 }
-.st_opacity_03{
-  opacity: 0.30;
+.cs_opacity_03 {
+  opacity: 0.3;
 }
-.st_opacity_04{
-  opacity: 0.40;
+.cs_opacity_04 {
+  opacity: 0.4;
 }
-.st_opacity_05{
-  opacity: 0.50;
+.cs_opacity_05 {
+  opacity: 0.5;
 }
-.st_opacity_06{
-  opacity: 0.60;
+.cs_opacity_06 {
+  opacity: 0.6;
 }
-.st_opacity_07{
-  opacity: 0.70;
+.cs_opacity_07 {
+  opacity: 0.7;
 }
-.st_opacity_08{
-  opacity: 0.80;
+.cs_opacity_08 {
+  opacity: 0.8;
 }
-.st_opacity_09{
-  opacity: 0.90;
+.cs_opacity_09 {
+  opacity: 0.9;
 }
 // line height
-.st_line_height_px_20{
+.cs_line_height_px_20 {
   line-height: 20px;
 }
-.st_line_height_percent_120{
+.cs_line_height_percent_120 {
   line-height: 120%;
 }
-.st_line_height_percent_130{
+.cs_line_height_percent_130 {
   line-height: 130%;
 }
 //start typography
-.st_normal {
+.cs_normal {
   font-weight: 400;
 }
-.st_medium {
+.cs_medium {
   font-weight: 500;
 }
-.st_semibold {
+.cs_semibold {
   font-weight: 600;
 }
-.st_bold {
+.cs_bold {
   font-weight: 700;
 }
-.st_font_14{
+.cs_font_14 {
   font-size: 14px;
 }
-.st_font_16{
+.cs_font_16 {
   font-size: 16px;
 }
-.st_font_18{
+.cs_font_18 {
   font-size: 18px;
 }
-.st_font_20{
+.cs_font_20 {
   font-size: 20px;
 }
-.st_font_22{
+.cs_font_22 {
   font-size: 22px;
 }
-.st_font_26{
+.cs_font_26 {
   font-size: 26px;
 }
-.st_font_30{
+.cs_font_30 {
   font-size: 30px;
 }
-.st_font_32{
+.cs_font_32 {
   font-size: 32px;
 }
-.st_font_38{
+.cs_font_38 {
   font-size: 38px;
 }
-.st_font_42{
+.cs_font_42 {
   font-size: 42px;
 }
-.st_font_52{
+.cs_font_52 {
   font-size: 52px;
 }
-.st_font_56{
+.cs_font_56 {
   font-size: 56px;
 }
-.st_font_62{
+.cs_font_62 {
   font-size: 62px;
 }
-.st_font_72{
+.cs_font_72 {
   font-size: 72px;
 }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }
-// .st_font_{
+// .cs_font_{
 //   font-size: px;
 // }

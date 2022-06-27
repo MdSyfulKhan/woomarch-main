@@ -1,158 +1,146 @@
 
 
 //layout product container
-.st_product_container_in {
+.cs_product_container_in {
   display: flex;
-  .st_left_width_20 {
+  .cs_left_width_20 {
     width: 20%;
   }
-  .st_left_width_27 {
+  .cs_left_width_27 {
     width: 27%;
   }
-  .st_left_width_16 {
+  .cs_left_width_16 {
     width: 16.66%;
   }
-  .st_right_width_remaining {
+  .cs_right_width_remaining {
     flex: 1;
     margin-left: 25px;
   }
 }
 @media only screen and (max-width: 1400px) {
-  .st_product_container_in {
+  .cs_product_container_in {
     display: block;
-    .st_left_width_16,.st_left_width_20,.st_left_width_27 {
+    .cs_left_width_16,.cs_left_width_20,.cs_left_width_27 {
       width: 100%;
     }
-    .st_left_width_20 {
+    .cs_left_width_20 {
       padding-bottom: 30px;
     }
 
-    .st_right_width_remaining{
+    .cs_right_width_remaining{
       margin: 0;
     }
   }
 }
 
 // 6 layout
-.st_grid_container_layout_6 {
+.cs_grid_container_layout_6 {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 25px;
 }
 // 5 layout
-.st_grid_container_layout_5 {
+.cs_grid_container_layout_5 {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 25px;
 }
 // 4 layout
-.st_grid_container_layout_4 {
+.cs_grid_container_layout_4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 25px;
 }
 // 3 layout
-.st_grid_container_layout_3 {
+.cs_grid_container_layout_3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 25px;
 }
 // 2 layout
-.st_grid_container_layout_2 {
+.cs_grid_container_layout_2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px;
 }
 
 @media only screen and (max-width: 767px) {
-  .st_grid_container_layout_6 {
+  .cs_grid_container_layout_6 {
     grid-template-columns: 1fr;
   }
-  .st_grid_container_layout_5 {
+  .cs_grid_container_layout_5 {
     grid-template-columns: 1fr;
   }
-  .st_grid_container_layout_4 {
+  .cs_grid_container_layout_4 {
     grid-template-columns: 1fr;
   }
-  .st_grid_container_layout_3 {
+  .cs_grid_container_layout_3 {
     grid-template-columns: 1fr;
   }
-  .st_grid_container_layout_2 {
-    grid-template-columns: repeat(2, 1fr);
+  .cs_grid_container_layout_2 {
+    grid-template-columns:  1fr;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .st_grid_container_layout_6 {
+  .cs_grid_container_layout_6 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_5 {
+  .cs_grid_container_layout_5 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_4 {
+  .cs_grid_container_layout_4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_3 {
+  .cs_grid_container_layout_3 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_2 {
-    grid-template-columns: repeat(3, 1fr);
+  .cs_grid_container_layout_2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .st_grid_container_layout_6 {
+  .cs_grid_container_layout_6 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_5 {
+  .cs_grid_container_layout_5 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .st_grid_container_layout_4 {
+  .cs_grid_container_layout_4 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .st_grid_container_layout_3 {
+  .cs_grid_container_layout_3 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_2 {
-    grid-template-columns: repeat(4, 1fr);
+  .cs_grid_container_layout_2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1200px) {
-  .st_grid_container_layout_6 {
+  .cs_grid_container_layout_6 {
     grid-template-columns: repeat(2, 1fr);
   }
-  .st_grid_container_layout_5 {
+  .cs_grid_container_layout_5 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .st_grid_container_layout_4 {
+  .cs_grid_container_layout_4 {
     grid-template-columns: repeat(4, 1fr);
   }
-  .st_grid_container_layout_3 {
+  .cs_grid_container_layout_3 {
     grid-template-columns: repeat(3, 1fr);
   }
-  .st_grid_container_layout_2 {
-    grid-template-columns: repeat(6, 1fr);
+  .cs_grid_container_layout_2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 1400px) {
-  .st_grid_container_layout_6 {
+  .cs_grid_container_layout_6 {
     grid-template-columns: repeat(6, 1fr);
   }
-  .st_grid_container_layout_5 {
+  .cs_grid_container_layout_5 {
     grid-template-columns: repeat(5, 1fr);
   }
 }
 
-
-// min-width
-@media only screen and (max-width: 767px) {
-}
-@media only screen and (min-width: 768px) {
-}
-@media only screen and (min-width: 992px) {
-}
-@media only screen and (min-width: 1200px) {
-}
-@media only screen and (min-width: 1400px) {
-}

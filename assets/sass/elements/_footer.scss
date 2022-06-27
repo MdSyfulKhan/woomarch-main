@@ -1,4 +1,4 @@
-.st_site_footer {
+.cs_site_footer {
   img {
     height: initial;
     width: initial;
@@ -6,7 +6,7 @@
 
 
   //footer links
-  .st_footer_menu {
+  .cs_footer_menu {
     h4 {
       font-size: 20px;
       font-weight: 500;
@@ -26,7 +26,7 @@
       }
     }
 
-    &.st_popular_tag {
+    &.cs_popular_tag {
       li {
         display: inline-block;
         background-color: $light-gray2;
@@ -43,7 +43,7 @@
       }
     }
   }
-  .st_condition {
+  .cs_condition {
     li {
       display: inline-block;
       margin-right: 25px;
@@ -59,7 +59,7 @@
     }
   }
   //social links
-  .st_social_links {
+  .cs_social_links {
     li {
       display: inline-block;
       text-align: center;
@@ -110,25 +110,25 @@
     }
   }
   @media only screen and (max-width: 1400px) {
-    .st_social_links li {
+    .cs_social_links li {
       margin-right: 10px;
       margin-bottom: 10px;
     }
   }
   //copy right
-  .st_footer_bottom {
+  .cs_footer_bottom {
     padding: 25px;
     text-align: center;
   }
   //footer contact
-  .st_footer_contact.st_style1,
-  .st_footer_contact.st_style2{
+  .cs_footer_contact.cs_style1,
+  .cs_footer_contact.cs_style2{
     li {
       margin-bottom: 18px;
       &:last-child {
         margin: 0;
       }
-      .st_contact_elements {
+      .cs_contact_elements {
         display: inline-flex;
         img {
           margin-right: 15px;
@@ -146,20 +146,20 @@
       }
     }
   }
-  .st_footer_right {
+  .cs_footer_right {
     margin-left: -50px;
   }
   @media only screen and (max-width: 1200px) {
-    .st_footer_right {
+    .cs_footer_right {
       margin: 0;
     }
   }
 }
 
-.st_site_footer.st_style2 {
+.cs_site_footer.cs_style2 {
   background-color: #fff;
 }
 // home page 3
-.st_subscribe_and_footer{
+.cs_subscribe_and_footer{
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(176.82deg, rgba(196, 196, 196, 0) 7.79%, #C4C4C4 100.06%);
 }

@@ -21,12 +21,12 @@ $themeAccent2: #f25c05;
 |-------------------------------------------------------------------------- */
 
 body,
-.st_secondary_font {
+.cs_secondary_font {
   color: $themeSecondary;
   font-family: "Quicksand", sans-serif;
 }
 
-.st_primary_font,
+.cs_primary_font,
 h1,
 h2,
 h3,
@@ -43,43 +43,47 @@ a {
   }
 }
 
-.st_primary_color,
-.st_primary_color_hover:hover {
+.cs_primary_color,
+.cs_primary_color_hover:hover {
   color: $themePrimary;
 }
-.st_secondary_color,
-.st_secondary_color_hover:hover {
+.cs_secondary_color,
+.cs_secondary_color_hover:hover {
   color: $themeSecondary;
 }
-.st_accent_color,
-.st_accent_color_hover:hover {
+.cs_ternary_color,
+.cs_ternary_color_hover:hover {
+  color: $themeTernary;
+}
+.cs_accent_color,
+.cs_accent_color_hover:hover {
   color: $themeAccent;
 }
-.st_accent_color2,
-.st_accent_color2_hover:hover {
+.cs_accent_color2,
+.cs_accent_color2_hover:hover {
   color: $themeAccent2;
 }
 
 
 
-.st_accent_bg,
-.st_accent_bg_hover:hover {
+.cs_accent_bg,
+.cs_accent_bg_hover:hover {
   background-color: $themeAccent;
 }
-.st_accent_bg2,
-.st_accent_bg2_hover:hover {
+.cs_accent_bg2,
+.cs_accent_bg2_hover:hover {
   background-color: $themeAccent2;
 }
-.st_primary_bg,
-.st_primary_bg_hover:hover {
-  background-color: $primary;
+.cs_primary_bg,
+.cs_primary_bg_hover:hover {
+  background-color: $themePrimary;
 }
-.st_secondary_bg,
-.st_secondary_bg_hover:hover {
-  background-color: $themeAccent;
+.cs_secondary_bg,
+.cs_secondary_bg_hover:hover {
+  background-color: $themeSecondary;
 }
-.st_ternary_bg,
-.st_ternary_bg_hover:hover {
+.cs_ternary_bg,
+.cs_ternary_bg_hover:hover {
   background-color: $themeTernary;
 }
 

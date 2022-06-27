@@ -1,6 +1,6 @@
 // home page 3
-.st_blog {
-  .st_blog_heading.st_style1 {
+.cs_blog {
+  .cs_blog_heading.cs_style1 {
     text-align: center;
     h2 {
       font-size: 32px;
@@ -14,13 +14,13 @@
       color: $primary;
     }
   }
-  .st_single_blog.st_style1 {
+  .cs_single_blog.cs_style1 {
     a {
     }
-    .st_blog_text.st_style1 {
+    .cs_blog_text.cs_style1 {
       padding: 25px 15px;
       padding-bottom: 0;
-      .st_blog_title {
+      .cs_blog_title {
         text-decoration: none;
         font-weight: 600;
         font-size: 18px;
@@ -39,10 +39,10 @@
 }
 
 // home page 3 background adjust
-.st_blog.st_home3{
+.cs_blog.cs_home3{
   background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
 }
 
-.st_subscribe_and_footer.st_home3{
+.cs_subscribe_and_footer.cs_home3{
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(176.82deg, rgba(196, 196, 196, 0) 7.79%, #C4C4C4 100.06%);
 }

@@ -1,8 +1,8 @@
 //
-.st_cta_section.st_style1 {
+.cs_cta_section.cs_style1 {
   position: relative;
   height: 590px;
-  .st_cta_content_wrapper {
+  .cs_cta_content_wrapper {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -12,24 +12,24 @@
       rgba(0, 0, 0, 0) 52.96%
     );
   }
-  .st_cta_content_in {
+  .cs_cta_content_in {
     display: flex;
     align-items: center;
   }
-  .st_cta_title {
+  .cs_cta_title {
     line-height: 120%;
   }
-  .st_cta_countdown_title {
+  .cs_cta_countdown_title {
     line-height: 120%;
     margin: 0;
   }
-  .st_cta_countdown_time {
+  .cs_cta_countdown_time {
     line-height: 100%;
   }
-  .st_btn {
+  .cs_btn {
     line-height: 20px;
   }
-  .st_cta_offer_info {
+  .cs_cta_offer_info {
     display: flex;
     height: 190px;
     width: 190px;

@@ -1,12 +1,12 @@
 // newsletter text
-.st_newsletter_content.st_home3{
+.cs_newsletter_content.cs_home3{
   h2{
     margin-bottom: 15px;
   }
 }
 // newsletter form
-.st_newsletter {
-  .st_newsletter_form{
+.cs_newsletter {
+  .cs_newsletter_form{
     display: inline-flex;
     input{
       margin-right: 15px;
@@ -15,22 +15,22 @@
       border-radius: 5px;
     }
     //home 2
-    input.st_home2{
+    input.cs_home2{
       background-color: $light-gray1;
       min-width: 250px;
     }
     // home 3
-    input.st_home3{
+    input.cs_home3{
       background-color: $light-gray1;
       width: 600px;
     }
     @media only screen and (max-width:991px){
-      input.st_home3{
+      input.cs_home3{
         width: 400px;
       }
     }
     @media only screen and (max-width:767px){
-      input.st_home3{
+      input.cs_home3{
         width: 270px;
       }
     }

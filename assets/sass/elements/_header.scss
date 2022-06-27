@@ -1,54 +1,54 @@
-.st_site_header {
-  .st_message.st_style1 {
+.cs_site_header {
+  .cs_message.cs_style1 {
     padding: 3px 15px;
     font-size: 14px;
     border-radius: 3px;
     margin-right: 15px;
   }
-  .st_message.st_style1.st_color1 {
+  .cs_message.cs_style1.cs_color1 {
     background-color: $yellow;
     color: $primary;
   }
-  .st_message.st_style1.st_color2 {
+  .cs_message.cs_style1.cs_color2 {
     background-color: $blue;
     color: #fff;
   }
-  .st_message.st_style1.st_color3 {
+  .cs_message.cs_style1.cs_color3 {
     background-color: $blue;
     color: #fff;
   }
 
   //header top
-  .st_header_top {
+  .cs_header_top {
     display: flex;
     align-items: center;
   }
-  .st_header_top.st_style1 {
+  .cs_header_top.cs_style1 {
     height: 40px;
     border-bottom: 1px solid rgba($yellow, 0.3);
   }
-  .st_header_top.st_style2 {
+  .cs_header_top.cs_style2 {
     height: 50px;
     border-bottom: 1px solid rgba($blue, 0.4);
   }
 
   //header top in
-  .st_header_top.st_style2 {
+  .cs_header_top.cs_style2 {
   }
-  .st_header_top_in {
+  .cs_header_top_in {
     display: flex;
     justify-content: space-between;
   }
 
-  .st_header_top_left span.st_style1 {
+  .cs_header_top_left span.cs_style1 {
     background-color: $yellow;
     color: $primary;
   }
-  .st_header_top_left.st_style2 span.st_style2 {
+  .cs_header_top_left.cs_style2 span.cs_style2 {
     background-color: $blue;
     color: #fff;
   }
-  .st_header_top_right ul li {
+  .cs_header_top_right ul li {
     display: inline-block;
     margin-right: 15px;
     position: relative;
@@ -79,20 +79,20 @@
   // header top end
 
   //header bottom
-  .st_header_bottom.st_style1 {
+  .cs_header_bottom.cs_style1 {
     min-height: 110px;
   }
-  .st_header_bottom.st_style2 {
+  .cs_header_bottom.cs_style2 {
     min-height: 100px;
     display: flex;
     align-items: center;
   }
-  .st_header_bottom_in {
+  .cs_header_bottom_in {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .st_header_bottom_right ul li {
+  .cs_header_bottom_right ul li {
     display: inline-block;
     margin-right: 25px;
     &:last-child {
@@ -101,21 +101,21 @@
   }
 
   // single elements
-  .st_signin_signup {
+  .cs_signin_signup {
     display: inline-flex;
-    .st_login {
+    .cs_login {
       text-decoration: none;
       img {
         margin-right: 5px;
       }
     }
-    .st_slash {
+    .cs_slash {
       margin: 0 5px;
     }
   }
 
-  .st_favorite,
-  .st_addToCart {
+  .cs_favorite,
+  .cs_addToCart {
     position: relative;
     span {
       position: absolute;
@@ -132,15 +132,15 @@
     }
   }
 
-  .st_phone.st_style1,
-  .st_phone.st_style2 {
+  .cs_phone.cs_style1,
+  .cs_phone.cs_style2 {
     display: flex;
     align-items: center;
     color: $primary;
     img {
       margin-right: 10px;
     }
-    .st_number {
+    .cs_number {
       span {
         font-size: 12px;
         color: $secondary;
@@ -148,15 +148,15 @@
     }
   }
 
-  .st_phone.st_style2 {
+  .cs_phone.cs_style2 {
     font-weight: 700;
   }
 
-  .st_cta.st_style2 {
+  .cs_cta.cs_style2 {
     display: flex;
   }
 
-  .st_location {
+  .cs_location {
     text-decoration: none;
     img {
       margin-right: 5px;
@@ -165,7 +165,7 @@
   // menu
 }
 
-.st_main_menu {
+.cs_main_menu {
   ul {
     li {
       display: inline-block;
@@ -213,7 +213,7 @@
       }
     }
   }
-  &.st_style2 ul {
+  &.cs_style2 ul {
     li {
       &.active a,
       &:hover a{

@@ -29,7 +29,7 @@ function dynamicBackground() {
 /*--------------------------------------------------------------
   #. Slick Slider
 --------------------------------------------------------------*/
-// $('.st_slider_wrapper').slick({
+// $('.cs_slider_wrapper').slick({
 //   autoplay: true,
 //   autoplaySpeed: 10000,
 //   infinite: true,
@@ -44,9 +44,9 @@ function dynamicBackground() {
     #. Tabs
   --------------------------------------------------------------*/
   function tabs() {
-    $(".st_tabs .st_tab_links a").on("click", function (e) {
+    $(".cs_tabs .cs_tab_links a").on("click", function (e) {
       const currentAttrValue = $(this).attr("href");
-      $(".st_tabs " + currentAttrValue)
+      $(".cs_tabs " + currentAttrValue)
         .fadeIn(400)
         .siblings()
         .hide();
@@ -58,12 +58,12 @@ function dynamicBackground() {
 
 
 function slickInit() {
-  if ($.exists(".cs-slider")) {
-    $(".cs-slider").each(function () {
+  if ($.exists(".cs_slider")) {
+    $(".cs_slider").each(function () {
       // Slick Variable
-      var $ts = $(this).find(".cs-slider_container");
-      var $slickActive = $(this).find(".cs-slider_wrapper");
-      var $sliderNumber = $(this).siblings(".slider-number");
+      var $ts = $(this).find(".cs_slider_container");
+      var $slickActive = $(this).find(".cs_slider_wrapper");
+      var $sliderNumber = $(this).siblings(".slider_number");
 
       // Auto Play
       var autoPlayVar = parseInt($ts.attr("data-autoplay"), 10);
@@ -84,7 +84,7 @@ function slickInit() {
         parseInt($ts.attr("data-variable-width"), 10)
       );
       // Pagination
-      var paginaiton = $(this).children().hasClass("cs-pagination");
+      var paginaiton = $(this).children().hasClass("cs_pagination");
       // Slide Per View
       var slidesPerView = $ts.attr("data-slides-per-view");
       if (slidesPerView == 1) {
@@ -111,9 +111,9 @@ function slickInit() {
         autoplaySpeed: autoplaySpdVar,
         centerMode: centerVar,
         fade: fadeVar,
-        prevArrow: $(this).find(".cs-left_arrow"),
-        nextArrow: $(this).find(".cs-right_arrow"),
-        appendDots: $(this).find(".cs-pagination"),
+        prevArrow: $(this).find(".cs_left_arrow"),
+        nextArrow: $(this).find(".cs_right_arrow"),
+        appendDots: $(this).find(".cs_pagination"),
         slidesToShow: slidesPerView,
         variableWidth: variableWidthVar,
         // slidesToScroll: slidesPerView,
@@ -157,8 +157,8 @@ function slickInit() {
   19. CountDown
 --------------------------------------------------------------*/
 function countDown() {
-  if ($.exists(".st_countdown")) {
-    $(".st_countdown").each(function () {
+  if ($.exists(".cs_countdown")) {
+    $(".cs_countdown").each(function () {
       var _this = this;
       var el = $(_this).data("countdate");
       var countDownDate = new Date(el).getTime();
@@ -171,14 +171,14 @@ function countDown() {
         );
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        $(_this).find(".st_count_days").html(days);
-        $(_this).find(".st_count_hours").html(hours);
-        $(_this).find(".st_count_minutes").html(minutes);
-        $(_this).find(".st_count_seconds").html(seconds);
+        $(_this).find(".cs_count_days").html(days);
+        $(_this).find(".cs_count_hours").html(hours);
+        $(_this).find(".cs_count_minutes").html(minutes);
+        $(_this).find(".cs_count_seconds").html(seconds);
 
         if (distance < 0) {
           clearInterval(x);
-          $(_this).html("<div class='cs-token_expired'>TOKEN EXPIRED<div>");
+          $(_this).html("<div class='cs_token_expired'>TOKEN EXPIRED<div>");
         }
       }, 1000);
     });
