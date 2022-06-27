@@ -30,8 +30,16 @@
     line-height: 20px;
   }
   .st_cta_offer_info {
+    display: flex;
     height: 190px;
     width: 190px;
     margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }

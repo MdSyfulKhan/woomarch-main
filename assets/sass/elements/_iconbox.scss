@@ -1,24 +1,24 @@
-.st_service.st_style1{
-  height: 116px;
-  padding: 10px;
+.st_iconbox.st_style1{
+  min-height: 116px;
+  padding: 20px 20px;
   display: flex;
   align-items: center;
-}
-.st_iconbox{
-  height: 56px;
-  width: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 14px;
-}
-.st_service_info{
-  h2{
-    line-height: 150%;
-    margin-bottom: 1px;
+  .st_iconbox_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    flex: none;
+    max-width: 48px;
   }
-  p{
-    line-height: 150%;
-    margin: 0;
+  .st_iconbox_info{
+    h2{
+      line-height: 150%;
+      margin-bottom: 1px;
+    }
+    p{
+      line-height: 150%;
+      margin: 0;
+    }
   }
 }

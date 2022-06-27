@@ -1,9 +1,14 @@
 
 $(function () {
   dynamicBackground();
-  tabs()
+  tabs();
+  countDown();
+  slickInit();
 });
 
+$.exists = function (selector) {
+  return $(selector).length > 0;
+};
 
 
 
@@ -24,16 +29,16 @@ function dynamicBackground() {
 /*--------------------------------------------------------------
   #. Slick Slider
 --------------------------------------------------------------*/
-$('.st_slider_wrapper').slick({
-  autoplay: true,
-  autoplaySpeed: 10000,
-  infinite: true,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  dots:false,
-  prevArrow: "<i class='fa-solid fa-chevron-left'></i>",
-  nextArrow: "<i class='fa-solid fa-chevron-right'></i>"
-});
+// $('.st_slider_wrapper').slick({
+//   autoplay: true,
+//   autoplaySpeed: 10000,
+//   infinite: true,
+//   slidesToShow: 1,
+//   adaptiveHeight: true,
+//   dots:false,
+//   prevArrow: "<i class='fa-solid fa-chevron-left'></i>",
+//   nextArrow: "<i class='fa-solid fa-chevron-right'></i>"
+// });
 
   /*--------------------------------------------------------------
     #. Tabs
@@ -145,64 +150,37 @@ function slickInit() {
       });
     });
   }
-
-  if ($.exists(".cs-slider_for")) {
-    $(".cs-slider_for").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".cs-slider_nav",
-    });
-    $(".cs-slider_nav").slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: ".cs-slider_for",
-      dots: false,
-      prevArrow: false,
-      nextArrow: false,
-      focusOnSelect: true,
-      vertical: true,
-      verticalSwiping: true,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            vertical: false,
-            verticalSwiping: false,
-          },
-        },
-      ],
-    });
-  }
-
-  if ($.exists(".cs-slider_for_1")) {
-    $(".cs-slider_for_1").slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: ".cs-slider_nav_1",
-    });
-    $(".cs-slider_nav_1").slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      asNavFor: ".cs-slider_for_1",
-      dots: false,
-      prevArrow: false,
-      nextArrow: false,
-      focusOnSelect: true,
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            vertical: false,
-            verticalSwiping: false,
-          },
-        },
-      ],
-    });
-  }
 }
 
 
+/*--------------------------------------------------------------
+  19. CountDown
+--------------------------------------------------------------*/
+function countDown() {
+  if ($.exists(".st_countdown")) {
+    $(".st_countdown").each(function () {
+      var _this = this;
+      var el = $(_this).data("countdate");
+      var countDownDate = new Date(el).getTime();
+      var x = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        $(_this).find(".st_count_days").html(days);
+        $(_this).find(".st_count_hours").html(hours);
+        $(_this).find(".st_count_minutes").html(minutes);
+        $(_this).find(".st_count_seconds").html(seconds);
+
+        if (distance < 0) {
+          clearInterval(x);
+          $(_this).html("<div class='cs-token_expired'>TOKEN EXPIRED<div>");
+        }
+      }, 1000);
+    });
+  }
+}

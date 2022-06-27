@@ -14,9 +14,6 @@
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
-/*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
-
 body,
 html {
   color: $secondary;
@@ -104,8 +101,6 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 

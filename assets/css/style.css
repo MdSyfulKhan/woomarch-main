@@ -17,8 +17,6 @@
 /*--------------------------------------------------------------
 1. Typography
 ----------------------------------------------------------------*/
-/*Google Fonts*/
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap");
 body,
 html {
   color: #707188;
@@ -636,6 +634,36 @@ hr {
   font-size: 72px;
 }
 
+.cs-slider {
+  position: relative;
+}
+
+.cs-hidden {
+  display: none;
+}
+
+.cs-slider_arrows.cs-style1 .slick-arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+}
+
+.cs-slider_arrows.cs-style1 .slick-arrow.cs-left_arrow {
+  left: 30px;
+}
+
+.cs-slider_arrows.cs-style1 .slick-arrow.cs-right_arrow {
+  right: 30px;
+}
+
 .st_site_header .st_message.st_style1 {
   padding: 3px 15px;
   font-size: 14px;
@@ -918,39 +946,24 @@ hr {
   color: #fff !important;
 }
 
-.st_slider.st_style1 {
+.st_hero.st_style1 {
   height: 725px;
 }
 
-.st_slider.st_style1 .st_slider_subtitle {
+.st_hero.st_style1 .st_hero_subtitle {
   line-height: 20px;
 }
 
-.st_slider.st_style1 .st_slider_title {
+.st_hero.st_style1 .st_hero_title {
   line-height: 110%;
 }
 
-.st_slider.st_style1 .st_slider_paragraph {
+.st_hero.st_style1 .st_hero_paragraph {
   line-height: 150%;
 }
 
-.st_slider.st_style1 .st_btn {
+.st_hero.st_style1 .st_btn {
   line-height: 20px;
-}
-
-.slick-arrow {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  line-height: 50px;
-  background: #fff;
-  border-radius: 50%;
-  border: none;
-  content: "";
 }
 
 .st_catagory.st_style1 {
@@ -1027,16 +1040,16 @@ hr {
   margin-right: 14px;
 }
 
-.st_single_service.st_style1 .st_service_text div,
-.st_single_service.st_style2 .st_service_text div {
+.st_single_service.st_style1 .st_iconbox_text div,
+.st_single_service.st_style2 .st_iconbox_text div {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 0.94px;
   color: #010A44;
 }
 
-.st_single_service.st_style1 .st_service_text p,
-.st_single_service.st_style2 .st_service_text p {
+.st_single_service.st_style1 .st_iconbox_text p,
+.st_single_service.st_style2 .st_iconbox_text p {
   margin: 0;
 }
 
@@ -1087,9 +1100,27 @@ hr {
 }
 
 .st_cta_section.st_style1 .st_cta_offer_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 190px;
   width: 190px;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .st_branding .st_grid_container_in {
@@ -1148,9 +1179,9 @@ hr {
   background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(176.82deg, rgba(196, 196, 196, 0) 7.79%, #C4C4C4 100.06%);
 }
 
-.st_service.st_style1 {
-  height: 116px;
-  padding: 10px;
+.st_iconbox.st_style1 {
+  min-height: 116px;
+  padding: 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,9 +1190,7 @@ hr {
           align-items: center;
 }
 
-.st_iconbox {
-  height: 56px;
-  width: 56px;
+.st_iconbox.st_style1 .st_iconbox_icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1172,14 +1201,18 @@ hr {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 14px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  max-width: 48px;
 }
 
-.st_service_info h2 {
+.st_iconbox.st_style1 .st_iconbox_info h2 {
   line-height: 150%;
   margin-bottom: 1px;
 }
 
-.st_service_info p {
+.st_iconbox.st_style1 .st_iconbox_info p {
   line-height: 150%;
   margin: 0;
 }
