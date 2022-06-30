@@ -43,6 +43,23 @@ a {
   }
 }
 
+.cs_children_menu_title::before {
+  background-color: $themeAccent;
+}
+.cs_nav .cs_nav_list {
+  > li {
+    &.active {
+      color: $themeAccent;
+    }
+  }
+  ul li a{
+    color: $themeSecondary !important;
+    &:hover{
+      color: $themeAccent !important;
+    }
+  }
+}
+
 .cs_primary_color,
 .cs_primary_color_hover:hover {
   color: $themePrimary;
@@ -63,8 +80,6 @@ a {
 .cs_accent_color2_hover:hover {
   color: $themeAccent2;
 }
-
-
 
 .cs_accent_bg,
 .cs_accent_bg_hover:hover {

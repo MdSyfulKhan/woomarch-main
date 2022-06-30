@@ -35,6 +35,22 @@ a:hover {
   color: #4285f4;
 }
 
+.cs_children_menu_title::before {
+  background-color: #4285f4;
+}
+
+.cs_nav .cs_nav_list > li.active {
+  color: #4285f4;
+}
+
+.cs_nav .cs_nav_list ul li a {
+  color: #707188 !important;
+}
+
+.cs_nav .cs_nav_list ul li a:hover {
+  color: #4285f4 !important;
+}
+
 .cs_primary_color,
 .cs_primary_color_hover:hover {
   color: #010a44;

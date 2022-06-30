@@ -8,3 +8,11 @@
   line-height: 20px;
   padding: 11px 34px;
 }
+
+.cs_btn {
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0px 2px 5px 3px rgba($primary, 0.25);
+  }
+}

@@ -4,11 +4,46 @@ $(function () {
   tabs();
   countDown();
   slickInit();
+  mainNav();
 });
 
 $.exists = function (selector) {
   return $(selector).length > 0;
 };
+
+
+
+
+
+
+function mainNav() {
+  $(".cs_nav").append('<span class="cs_menu_toggle"><span></span></span>');
+  $(".menu-item-has-children").append('<span class="cs_menu_dropdown_toggle"></span>');
+  $(".cs_menu_toggle").on("click", function () {
+    $(this)
+      .toggleClass("cs_toggle_active")
+      .siblings(".cs_nav_list")
+      .slideToggle();
+  });
+  $(".cs_menu_dropdown_toggle").on("click", function () {
+    $(this).toggleClass("active").siblings("ul").slideToggle();
+    $(this).parent().toggleClass("active");
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
